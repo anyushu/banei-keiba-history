@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://next-ts-boilerplate-seven.vercel.app/
+
+# Sitemaps
+Sitemap: https://next-ts-boilerplate-seven.vercel.app/sitemap.xml

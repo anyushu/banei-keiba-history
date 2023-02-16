@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "search.exclude": {
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
