@@ -8,6 +8,9 @@ const config = {
         sans: ['Noto Sans JP', 'sans-serif'],
         serif: ['serif'],
       },
+      colors: {
+        green: { DEFAULT: '#00B17D' },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

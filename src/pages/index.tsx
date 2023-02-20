@@ -1,31 +1,48 @@
+import ReactFullpage from '@fullpage/react-fullpage'
 import type { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-import Layout from '@/components/layouts/CommonLayout'
+import Loading from '@/components/loading'
 
 const Home: NextPage = () => {
+  const [isShowLoading, setIsShowLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setIsShowLoading(false)
+    }, 1000)
+  })
   return (
     <>
       <NextSeo title="Next.js - Typescript Boilerplate" />
 
-      <Layout>
-        <section className="container mx-auto px-3 py-12">
-          <h1 className="mb-6 text-2xl font-bold">Next.js - Typescript Boilerplate</h1>
-          <h2 className="mb-3 text-xl">Installed Packages</h2>
-          <ol className="ml-6 list-decimal">
-            <li>Next SEO</li>
-            <li>Next SiteMap</li>
-            <li>ESLint</li>
-            <li>husky</li>
-            <li>lint-staged</li>
-            <li>PostCSS</li>
-            <li>Prettier</li>
-            <li>Tailwind CSS</li>
-            <li>Webpack Bundle Analyzer</li>
-          </ol>
-        </section>
-      </Layout>
+      <Loading />
+
+      {/* {isShowLoading ? (
+        <Loading />
+      ) : (
+        <ReactFullpage
+          credits={{ enabled: false }}
+          licenseKey={'XLEGI-J6ZRH-P1CKK-F7JG8-KJVRK'}
+          scrollingSpeed={1000}
+          debug={true}
+          render={({ state, fullpageApi }) => {
+            return (
+              <ReactFullpage.Wrapper>
+                <div className="section">
+                  <p>Section 1 (welcome to fullpage.js)</p>
+                  <button onClick={() => fullpageApi.moveSectionDown()}>
+                    Click me to move down
+                  </button>
+                </div>
+                <div className="section">
+                  <p>Section 2</p>
+                </div>
+              </ReactFullpage.Wrapper>
+            )
+          }}
+        />
+      )} */}
     </>
   )
 }
