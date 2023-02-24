@@ -2,8 +2,7 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
 
-import Loading from '@/components/Loading'
-import { Start } from '@/components/page'
+import { Start, Loading } from '@/components/page'
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(0)
