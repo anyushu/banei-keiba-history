@@ -5,6 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const config = withBundleAnalyzer({
   reactStrictMode: true,
+  // images: {
+  //   unoptimized: true,
+  // },
 })
 
 module.exports = config

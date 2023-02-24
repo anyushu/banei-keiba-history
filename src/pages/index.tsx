@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import Loading from '@/components/loading'
+import Loading from '@/components/Loading'
 
 const Home: NextPage = () => {
   // ローディングアニメーション
