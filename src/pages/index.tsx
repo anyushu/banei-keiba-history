@@ -1,7 +1,6 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import { NextSeo } from 'next-seo'
 import { useEffect, useState } from 'react'
 
 import Loading from '@/components/loading'
@@ -31,8 +30,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <NextSeo title="Next.js - Typescript Boilerplate" />
-
       <Loading loading={loading} />
 
       <div className={`opacity-0 ${loading == 100 && 'animate-fade-in'}`}>
@@ -45,8 +42,8 @@ const Home: NextPage = () => {
             return (
               <ReactFullpage.Wrapper>
                 <div className="section bg-white">
-                  <div className="container mx-auto h-screen w-screen">
-                    <div className="p-4 md:max-w-[33vw] md:py-10 md:px-0">
+                  <div className="container mx-auto h-screen w-screen px-4 md:px-0">
+                    <div className="py-4 md:max-w-[33vw] md:py-10">
                       <Image src="/images/logo.png" alt="サイト名" width={554.79} height={130.27} />
                     </div>
                     <div className="my-[15vh] flex items-center justify-center md:my-0">
