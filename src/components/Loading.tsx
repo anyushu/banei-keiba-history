@@ -8,7 +8,13 @@ const Loading = ({ loading }: { loading: number }) => {
           <p className="absolute left-0 top-1/2 w-full translate-y-[-50%] text-center text-4xl font-bold text-white">
             <span className="text-6xl">{loading}</span>%
           </p>
-          <Image src="/images/loading.png" alt="loading" width={316.15} height={310.05} />
+          <Image
+            priority={true}
+            src="/images/loading.png"
+            alt="loading"
+            width={316.15}
+            height={310.05}
+          />
         </div>
       </div>
     </div>
