@@ -48,6 +48,18 @@ const Home: NextPage = () => {
 
                   {/* 2ページ目 */}
                   <div className="section bg-[url('/images/bg_1.png')] bg-cover bg-no-repeat">
+                    <div
+                      className={`${
+                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
+                      } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+                    >
+                      <Image
+                        src="/images/banba_front_anime_sweat_1.png"
+                        width={154}
+                        height={107}
+                        alt="汗"
+                      />
+                    </div>
                     <div className="container mx-auto h-screen w-screen py-4">
                       <h2 className="flex items-center">
                         <Image src="/images/icon_hidume.png" width={140} height={140} alt="蹄" />
