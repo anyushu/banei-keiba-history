@@ -5,6 +5,7 @@ const words = [
   '最初の関門\n第一障害！',
   '伝統と歴史ある\n馬文化なのです！',
   '元々は\n農耕馬で外国馬！',
+  '第二障害！\n力を貯めろ！',
 ]
 
 const FloatRicky = ({ activeSection }: { activeSection: number }) => {
