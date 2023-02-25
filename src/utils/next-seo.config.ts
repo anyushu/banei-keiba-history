@@ -8,6 +8,7 @@ export const siteTitle = process.env.NEXT_PUBLIC_SITE_NAME || 'site name'
  * @see https://github.com/garmeeh/next-seo#default-seo-configuration
  */
 export const defaultSeo = {
+  noindex: true,
   defaultTitle: siteTitle,
   titleTemplate: `%s | ${siteTitle}`,
 }
