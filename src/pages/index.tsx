@@ -67,7 +67,6 @@ const Home: NextPage = () => {
                   </div>
 
                   {/* 4ページ目 */}
-
                   <BaneiHistory activeSection={activeSection} />
 
                   {/* 4ページ目 */}
