@@ -4,6 +4,7 @@ const words = [
   '世界でも例のない\nユニークな競馬！',
   '最初の関門\n第一障害！',
   '伝統と歴史ある\n馬文化なのです！',
+  '元々は\n農耕馬で外国馬！',
 ]
 
 const FloatRicky = ({ activeSection }: { activeSection: number }) => {

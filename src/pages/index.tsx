@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { Start, Loading, OnlyOneKeiba, BaneiHistory } from '@/components/page'
+import { Start, Loading, OnlyOneKeiba, BaneiHistory, BaneiRoots } from '@/components/page'
 import { FloatBanbaAction, FloatRicky, FloatScrollIcon } from '@/components/parts'
 
 const Home: NextPage = () => {
@@ -67,7 +67,11 @@ const Home: NextPage = () => {
                   </div>
 
                   {/* 4ページ目 */}
+
                   <BaneiHistory activeSection={activeSection} />
+
+                  {/* 4ページ目 */}
+                  <BaneiRoots activeSection={activeSection} />
                 </ReactFullpage.Wrapper>
               )
             }}
