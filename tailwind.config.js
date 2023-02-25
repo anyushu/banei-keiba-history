@@ -7,7 +7,16 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Noto Sans JP', 'sans-serif'],
+        sans: [
+          'Yu Gothic',
+          '游ゴシック',
+          'YuGothic',
+          '游ゴシック体',
+          'ヒラギノ角ゴ Pro W3',
+          'メイリオ',
+          'Noto Sans JP',
+          'sans-serif',
+        ],
         serif: ['serif'],
       },
       colors: {
@@ -16,6 +25,7 @@ const config = {
       animation: {
         'fade-in': 'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
         'fade-out': 'fade-out 1s ease both',
+        'banba-action': 'banba-action 3s ease 0s infinite both',
       },
       keyframes: {
         'fade-in': {
@@ -32,6 +42,20 @@ const config = {
           },
           to: {
             opacity: '0',
+          },
+        },
+        'banba-action': {
+          '0%': {
+            background:
+              'url("/images/banba_front_anime_uma_1.png") bottom left/auto 100% no-repeat',
+          },
+          '50%': {
+            background:
+              'url("/images/banba_front_anime_uma_2.png") bottom left/auto 100% no-repeat',
+          },
+          '100%': {
+            background:
+              'url("/images/banba_front_anime_uma_1.png") bottom left/auto 100% no-repeat',
           },
         },
       },

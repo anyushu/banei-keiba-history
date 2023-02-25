@@ -1,7 +1,8 @@
+import { fullpageApi } from '@fullpage/react-fullpage'
 import Image from 'next/image'
 import { useState } from 'react'
 
-const Start = () => {
+const Start = ({ fullpageApi }: { fullpageApi: fullpageApi }) => {
   const [over, setOver] = useState(false)
   const changeBeforeRicky = () => {
     setTimeout(() => {
@@ -15,7 +16,7 @@ const Start = () => {
   }
   return (
     <div id="startPage" className="section bg-white">
-      <div className="container mx-auto h-screen w-screen px-4 md:px-0">
+      <div className="container z-10 mx-auto h-screen w-screen px-4 md:px-0">
         <div className="py-4 md:max-w-[33vw] md:py-10">
           <Image src="/images/logo.png" alt="サイト名" width={554.79} height={130.27} />
         </div>
@@ -35,8 +36,8 @@ const Start = () => {
             />
           </div>
         </div>
-        <div className="mt-10 text-center">
-          <button type="button" className="">
+        <div className="z-10 mt-10 text-center">
+          <button type="button" onClick={() => fullpageApi.moveSectionDown()}>
             <Image
               className="drop-shadow-xl"
               src="/images/btn_start.png"
