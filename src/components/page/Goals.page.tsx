@@ -4,7 +4,7 @@ const Goals = () => {
   return (
     <div className="section relative bg-[url('/images/bg_goals_sp.png')] md:bg-[url('/images/bg_goals.png')]">
       <div className="container relative mx-auto h-screen w-screen py-4">
-        <h2 className="relative pt-[3vh] text-center">
+        <h2 className="relative pt-[3svh] text-center">
           <Image
             className="inline w-[90px] md:w-auto"
             src="/images/icon_hidume.png"
@@ -59,7 +59,7 @@ const Goals = () => {
         alt="リッキー"
       />
       <Image
-        className="absolute bottom-[20vh] -left-8 block md:hidden"
+        className="absolute bottom-[20svh] -left-8 block md:hidden"
         src="/images/goals_ricky_group_sp.svg"
         width={400}
         height={167}

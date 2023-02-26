@@ -48,9 +48,9 @@ const Start = ({ fullpageApi }: { fullpageApi: fullpageApi }) => {
             />
           </div>
         </div>
-        <div className="my-[15vh] flex items-center justify-center md:my-0">
+        <div className="my-[15svh] flex items-center justify-center md:my-0">
           <div
-            className="group h-[40vh] w-auto md:h-[50vh]"
+            className="group h-[40svh] w-auto md:h-[50svh]"
             onMouseOver={changeAfterRicky}
             onMouseOut={changeBeforeRicky}
           >

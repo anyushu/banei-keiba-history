@@ -6,7 +6,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
+        } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
