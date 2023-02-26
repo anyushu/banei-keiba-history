@@ -26,21 +26,21 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+        } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
+        } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_bless.png" width={144} height={152} alt="息" />
       </div>
@@ -70,6 +70,14 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
             slidesToScroll={1}
             centerMode={true}
             centerPadding="100px"
+            responsive={[
+              {
+                breakpoint: 768,
+                settings: {
+                  centerPadding: '60px',
+                },
+              },
+            ]}
           >
             <Image
               className="cursor-pointer"
@@ -126,15 +134,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
       <Modal
         isOpen={slider1ModalIsOpen}
         onRequestClose={() => setSlider1ModalIsOpenOpen(false)}
-        style={{
-          overlay: {
-            zIndex: 99999,
-          },
-          content: {
-            border: 'solid 5px #00B17D',
-            borderRadius: 0,
-          },
-        }}
+        style={modalStyle}
       >
         <button
           className=" absolute top-0 right-0"
@@ -143,11 +143,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_1.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">イレネー</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_1.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">イレネー</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
@@ -163,11 +169,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_2.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">カネサブラック</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_2.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">カネサブラック</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
@@ -183,11 +195,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_3.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">キンタロー</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_3.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">キンタロー</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
@@ -203,11 +221,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_4.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">スーパーペガサス</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_4.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">スーパーペガサス</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
@@ -223,11 +247,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_5.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">ホクショウマサル</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_5.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">ホクショウマサル</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
@@ -243,11 +273,17 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
-          <Image src="/images/famous_horses_6.png" width={640} height={480} alt="名馬" />
-          <div className="ml-12">
-            <h3 className="mb-3 text-2xl">マルセンバージ</h3>
-            <p>テキストが入りますテキストが入ります</p>
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
+          <Image
+            src="/images/famous_horses_6.png"
+            className="mt-auto md:mt-0"
+            width={640}
+            height={480}
+            alt="名馬"
+          />
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-2xl">マルセンバージ</h3>
+            <p className="text-sm md:text-base">テキストが入りますテキストが入ります</p>
           </div>
         </div>
       </Modal>
