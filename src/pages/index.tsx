@@ -3,7 +3,14 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
-import { Start, Loading, OnlyOneKeiba, BaneiHistory, BaneiRoots } from '@/components/page'
+import {
+  Start,
+  Loading,
+  OnlyOneKeiba,
+  BaneiHistory,
+  BaneiRoots,
+  BaneiTradition,
+} from '@/components/page'
 import { FloatBanbaAction, FloatRicky, FloatScrollIcon } from '@/components/parts'
 
 const Home: NextPage = () => {
@@ -89,6 +96,18 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
+                      } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+                    >
+                      <Image
+                        src="/images/banba_front_anime_sweat_1.png"
+                        width={154}
+                        height={107}
+                        alt="汗"
+                      />
+                    </div>
+                    <div
+                      className={`${
+                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
                       } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
                     >
                       <Image
@@ -100,6 +119,9 @@ const Home: NextPage = () => {
                     </div>
                     <div className="container mx-auto h-screen w-screen"></div>
                   </div>
+
+                  {/* 6ページ目 */}
+                  <BaneiTradition activeSection={activeSection} />
                 </ReactFullpage.Wrapper>
               )
             }}

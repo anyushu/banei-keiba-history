@@ -6,6 +6,11 @@ const words = [
   '伝統と歴史ある\n馬文化なのです！',
   '元々は\n農耕馬で外国馬！',
   '第二障害！\n力を貯めろ！',
+  '今も大切に\n受け継がれています！',
+  '偉大な\n先輩たちです',
+  '気軽に\n遊びに来てね！',
+  'ばんえいの歴史がわかる\nスペシャルムービーです！',
+  'ゴールは目前！\nあとひと踏ん張り！',
 ]
 
 const FloatRicky = ({ activeSection }: { activeSection: number }) => {
@@ -25,7 +30,7 @@ const FloatRicky = ({ activeSection }: { activeSection: number }) => {
           } fixed top-16 right-36 z-10 flex h-[115px] w-[305px] items-center justify-start bg-[url('/images/ricky_float_words.png')] bg-contain bg-no-repeat transition-all duration-500`}
         >
           <div className="px-10">
-            <p className="whitespace-pre-wrap text-2xl font-bold">{words[activeSection]}</p>
+            <p className="whitespace-pre-wrap text-xl font-bold">{words[activeSection]}</p>
           </div>
         </div>
       )}
