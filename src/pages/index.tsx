@@ -11,6 +11,7 @@ import {
   BaneiRoots,
   BaneiTradition,
   BaneiFamousHorses,
+  TouristAttraction,
 } from '@/components/page'
 import { FloatBanbaAction, FloatRicky, FloatScrollIcon } from '@/components/parts'
 
@@ -126,6 +127,9 @@ const Home: NextPage = () => {
 
                   {/* 7ページ目 */}
                   <BaneiFamousHorses activeSection={activeSection} />
+
+                  {/* 8ページ目 */}
+                  <TouristAttraction activeSection={activeSection} />
                 </ReactFullpage.Wrapper>
               )
             }}
