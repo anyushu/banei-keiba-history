@@ -141,7 +141,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+                      } fixed right-[30px] bottom-[calc(30vh+20px)] z-10 w-[60px] transition-all duration-500 md:bottom-[50vh] md:right-[10vw] md:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+                      } fixed right-0 bottom-[calc(30vh+30px)] z-10 w-[60px] transition-all duration-500 md:bottom-[calc(50vh+50px)] md:right-[calc(10vw-75px)] md:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
+                      } fixed bottom-[10vh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 md:right-[calc(30vw-50px)] md:bottom-[5vh] md:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"

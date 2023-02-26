@@ -24,6 +24,7 @@ const config = {
       },
       backgroundSize: {
         'size-90%': '90% 90%',
+        'size-100%': '100% 100%',
         'size-110%': '110% 110%',
       },
       animation: {
