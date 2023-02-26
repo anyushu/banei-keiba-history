@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                   <Start fullpageApi={fullpageApi} />
 
                   {/* 1ページ目 */}
-                  <div className="section bg-[url('/images/bg_1_sp.png')] bg-cover bg-no-repeat md:bg-[url('/images/bg_1.png')]">
+                  <div className="section bg-[url('/images/bg_1_sp.png')]  md:bg-[url('/images/bg_1.png')]">
                     <div className="container mx-auto h-screen w-screen"></div>
                   </div>
 
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                   <OnlyOneKeiba activeSection={activeSection} />
 
                   {/* 3ページ目 */}
-                  <div className="section bg-[url('/images/bg_2.png')] bg-cover bg-no-repeat">
+                  <div className="section bg-[url('/images/bg_2.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                   <BaneiRoots activeSection={activeSection} />
 
                   {/* 5ページ目 */}
-                  <div className="section bg-[url('/images/bg_2.png')] bg-cover bg-no-repeat">
+                  <div className="section bg-[url('/images/bg_3.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                   <BaneiMovie activeSection={activeSection} />
 
                   {/* 10ページ目 */}
-                  <div className="section bg-[url('/images/bg_4.png')] bg-cover bg-no-repeat">
+                  <div className="section bg-[url('/images/bg_4.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'

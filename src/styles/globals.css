@@ -11,14 +11,14 @@
 .fullpage-wrapper {
   @apply !w-full !transform-none;
   .fp-section {
-    @apply !w-full  absolute left-0 top-0 opacity-0 z-0 transition-all duration-700 ease-in-out;
+    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-700 ease-in-out bg-size-90% bg-center bg-no-repeat;
     &.active {
-      @apply visible opacity-100 z-[1];
+      @apply visible opacity-100 z-[1] bg-size-110% bg-center bg-no-repeat;
     }
     .fp-slidesContainer {
       @apply !w-full !transform-none;
       .fp-slide {
-        @apply !w-full  absolute left-0 top-0 opacity-0 z-0 transition-all duration-700 ease-in-out;
+        @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-700 ease-in-out;
         &.active {
           @apply visible opacity-100 z-[1];
         }

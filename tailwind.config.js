@@ -22,6 +22,11 @@ const config = {
       colors: {
         green: { DEFAULT: '#00B17D' },
       },
+      backgroundSize: {
+        'size-90%': '90%',
+        'size-100%': '100%',
+        'size-110%': '110%',
+      },
       animation: {
         'fade-in': 'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
         'fade-out': 'fade-out 1s ease both',

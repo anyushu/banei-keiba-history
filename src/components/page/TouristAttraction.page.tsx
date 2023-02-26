@@ -18,7 +18,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
   }
 
   return (
-    <div className="section bg-[url('/images/bg_4.png')] bg-cover bg-no-repeat">
+    <div className="section bg-[url('/images/bg_3.png')] ">
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
