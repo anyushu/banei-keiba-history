@@ -61,11 +61,11 @@ const Home: NextPage = () => {
                   <OnlyOneKeiba activeSection={activeSection} />
 
                   {/* 3ページ目 */}
-                  <div className="section bg-[url('/images/bg_2.png')]">
+                  <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+                      } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                   <BaneiRoots activeSection={activeSection} />
 
                   {/* 5ページ目 */}
-                  <div className="section bg-[url('/images/bg_3.png')]">
+                  <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                   <BaneiMovie activeSection={activeSection} />
 
                   {/* 10ページ目 */}
-                  <div className="section bg-[url('/images/bg_4.png')]">
+                  <div className="section bg-[url('/images/bg_4_sp.png')] md:bg-[url('/images/bg_4.png')]">
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'

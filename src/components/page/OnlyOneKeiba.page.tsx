@@ -3,7 +3,7 @@ import Zoom from 'react-medium-image-zoom'
 
 const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
   return (
-    <div className="section bg-[url('/images/bg_1.png')] ">
+    <div className="section bg-[url('/images/bg_1_sp.png')] md:bg-[url('/images/bg_1.png')]">
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
