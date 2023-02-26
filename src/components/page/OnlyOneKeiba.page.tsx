@@ -7,20 +7,30 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+        } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
-      <div className="container mx-auto h-screen w-screen py-4">
+      <div className="container mx-auto h-screen w-screen py-4 px-3 md:px-0">
         <h2 className="flex items-center">
-          <Image src="/images/icon_hidume.png" width={140} height={140} alt="蹄" />
+          <Image
+            className="h-14 w-14 md:h-auto md:w-auto"
+            src="/images/icon_hidume.png"
+            width={140}
+            height={140}
+            alt="蹄"
+          />
           <span>
-            <span className="block text-4xl font-bold">世界で唯一の「ばんえい競馬」</span>
-            <span className="block text-lg">The only “Banei Horse Racing” in the world</span>
+            <span className="block text-lg font-bold md:text-4xl">
+              世界で唯一の「ばんえい競馬」
+            </span>
+            <span className="block text-xs md:text-lg">
+              The only “Banei Horse Racing” in the world
+            </span>
           </span>
         </h2>
-        <div className="max-w-[850px] py-4">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="py-2 sm:max-w-[850px] md:py-4">
+          <div className="grid grid-cols-2 gap-2 md:gap-4">
             <div className="col-span-2">
               <Zoom>
                 <Image src="/images/stage01-ph01.png" width={850} height={340} alt="写真" />
@@ -46,7 +56,7 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
             </Zoom>
           </div>
           <div className="mt-4 border border-gray-500 bg-white p-4">
-            <p>
+            <p className="text-xs md:text-base">
               農耕から独自に発展した「ばんえい競馬」は、一般的な競馬と異なり、「そり」を曳いて競走する世界唯一の競馬です。
               <br />
               レースコースは一直線、2つの坂の障害があることも特徴で、馬の「力強さ」や「忍耐力」、それを制御する騎手の「テクニック」が求められます。
