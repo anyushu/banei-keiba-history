@@ -27,10 +27,16 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
 
       <div className="container mx-auto h-screen w-screen py-4">
         <h2 className="flex items-center">
-          <Image src="/images/icon_hidume.png" width={140} height={140} alt="蹄" />
+          <Image
+            className="h-14 w-14 md:h-auto md:w-auto"
+            src="/images/icon_hidume.png"
+            width={140}
+            height={140}
+            alt="蹄"
+          />
           <span>
-            <span className="block text-4xl font-bold">ばんえい競馬の伝統</span>
-            <span className="block text-lg">Tradition of Banei Horse Racing</span>
+            <span className="block text-lg font-bold md:text-4xl">ばんえい競馬の伝統</span>
+            <span className="block text-xs md:text-lg">Tradition of Banei Horse Racing</span>
           </span>
         </h2>
         <div className="max-w-[850px] py-4">

@@ -25,10 +25,16 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
       </div>
       <div className="container mx-auto h-screen w-screen py-4">
         <h2 className="flex items-center">
-          <Image src="/images/icon_hidume.png" width={140} height={140} alt="蹄" />
+          <Image
+            className="h-14 w-14 md:h-auto md:w-auto"
+            src="/images/icon_hidume.png"
+            width={140}
+            height={140}
+            alt="蹄"
+          />
           <span>
-            <span className="block text-4xl font-bold">ばん馬のルーツ</span>
-            <span className="block text-lg">Roots of Banei</span>
+            <span className="block text-lg font-bold md:text-4xl">ばん馬のルーツ</span>
+            <span className="block text-xs md:text-lg">Roots of Banei</span>
           </span>
         </h2>
         <div className="max-w-[850px] py-4">

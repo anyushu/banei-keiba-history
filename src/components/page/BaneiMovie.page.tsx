@@ -27,10 +27,20 @@ const BaneiMovie = ({ activeSection }: { activeSection: number }) => {
 
       <div className="container mx-auto h-screen w-screen py-4">
         <h2 className="flex items-center">
-          <Image src="/images/icon_hidume.png" width={140} height={140} alt="蹄" />
+          <Image
+            className="h-14 w-14 md:h-auto md:w-auto"
+            src="/images/icon_hidume.png"
+            width={140}
+            height={140}
+            alt="蹄"
+          />
           <span>
-            <span className="block text-4xl font-bold">SPECIAL MOVIE「ばんえい競馬の歴史」</span>
-            <span className="block text-lg">SPECIAL MOVIE “History of Banei Horse Racing”</span>
+            <span className="block text-lg font-bold md:text-4xl">
+              SPECIAL MOVIE「ばんえい競馬の歴史」
+            </span>
+            <span className="block text-xs md:text-lg">
+              SPECIAL MOVIE “History of Banei Horse Racing”
+            </span>
           </span>
         </h2>
 
