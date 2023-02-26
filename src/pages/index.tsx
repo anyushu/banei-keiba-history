@@ -13,6 +13,7 @@ import {
   BaneiFamousHorses,
   TouristAttraction,
   BaneiMovie,
+  Goals,
 } from '@/components/page'
 import { FloatBanbaAction, FloatRicky, FloatScrollIcon } from '@/components/parts'
 
@@ -174,6 +175,9 @@ const Home: NextPage = () => {
                       />
                     </div>
                   </div>
+
+                  {/* 最後 */}
+                  <Goals />
                 </ReactFullpage.Wrapper>
               )
             }}

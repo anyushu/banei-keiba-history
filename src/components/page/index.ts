@@ -7,3 +7,4 @@ export { default as BaneiTradition } from '@/components/page/BaneiTradition.page
 export { default as BaneiFamousHorses } from '@/components/page/BaneiFamousHorses.page'
 export { default as TouristAttraction } from '@/components/page/TouristAttraction.page'
 export { default as BaneiMovie } from '@/components/page/BaneiMovie.page'
+export { default as Goals } from '@/components/page/Goals.page'
