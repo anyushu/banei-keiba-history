@@ -55,7 +55,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative ml-[100px] mt-4 max-w-[600px]"
+              className="relative ml-[100px] mt-4 max-w-[600px] cursor-pointer"
               onClick={() => setBretonIsOpen(true)}
             >
               <Image
@@ -70,7 +70,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative ml-[200px] mt-4 max-w-[600px]"
+              className="relative ml-[200px] mt-4 max-w-[600px] cursor-pointer"
               onClick={() => setBergenIsOpen(true)}
             >
               <Image
