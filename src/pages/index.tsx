@@ -134,6 +134,46 @@ const Home: NextPage = () => {
 
                   {/* 9ページ目 */}
                   <BaneiMovie activeSection={activeSection} />
+
+                  {/* 10ページ目 */}
+                  <div className="section bg-[url('/images/bg_4.png')] bg-cover bg-no-repeat">
+                    <div
+                      className={`${
+                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
+                      } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+                    >
+                      <Image
+                        src="/images/banba_front_anime_sweat_1.png"
+                        width={154}
+                        height={107}
+                        alt="汗"
+                      />
+                    </div>
+                    <div
+                      className={`${
+                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
+                      } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+                    >
+                      <Image
+                        src="/images/banba_front_anime_sweat_1.png"
+                        width={154}
+                        height={107}
+                        alt="汗"
+                      />
+                    </div>
+                    <div
+                      className={`${
+                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
+                      } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
+                    >
+                      <Image
+                        src="/images/banba_front_anime_bless.png"
+                        width={144}
+                        height={152}
+                        alt="息"
+                      />
+                    </div>
+                  </div>
                 </ReactFullpage.Wrapper>
               )
             }}
