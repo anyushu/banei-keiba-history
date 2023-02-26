@@ -43,6 +43,7 @@ const Home: NextPage = () => {
             licenseKey={process.env.NEXT_PUBLIC_FULLPAGE_JS_LICENCE_KEY}
             scrollingSpeed={1000}
             debug={false}
+            loopBottom={true}
             onLeave={(_origin, destination) => {
               setActiveSection(destination.index)
             }}
