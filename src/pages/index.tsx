@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 
                   {/* 1ページ目 */}
                   <div className="section bg-[url('/images/bg_1_sp.png')]  md:bg-[url('/images/bg_1.png')]">
-                    <div className="container mx-auto h-screen w-screen"></div>
+                    <div className="container mx-auto h-[100svh] w-screen"></div>
                   </div>
 
                   {/* 2ページ目 */}
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                         alt="汗"
                       />
                     </div>
-                    <div className="container mx-auto h-screen w-screen"></div>
+                    <div className="container mx-auto h-[100svh] w-screen"></div>
                   </div>
 
                   {/* 4ページ目 */}
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
                         alt="息"
                       />
                     </div>
-                    <div className="container mx-auto h-screen w-screen"></div>
+                    <div className="container mx-auto h-[100svh] w-screen"></div>
                   </div>
 
                   {/* 6ページ目 */}
