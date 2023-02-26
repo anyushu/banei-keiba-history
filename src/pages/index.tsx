@@ -88,7 +88,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+                      } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+                      } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 md:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
+                      } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 md:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"

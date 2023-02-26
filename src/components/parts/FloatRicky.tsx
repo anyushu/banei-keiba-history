@@ -29,7 +29,7 @@ const FloatRicky = ({ activeSection }: { activeSection: number }) => {
             activeSection == 0 || activeSection == 12 ? 'opacity-0' : 'opacity-100'
           } fixed left-[60px] bottom-[40px] top-auto right-auto z-10 flex h-[60px] w-[140px] items-center justify-start bg-[url('/images/ricky_float_words_sp.png')] bg-contain bg-no-repeat transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36 md:h-[115px] md:w-[305px] md:bg-[url('/images/ricky_float_words.png')]`}
         >
-          <div className="pl-5 pr-1 md:px-10">
+          <div className="pl-4 pr-1 md:px-10">
             <p
               className={`whitespace-pre-wrap font-bold ${
                 activeSection == 10 ? 'text-xs md:text-lg' : 'text-xs md:text-xl'
