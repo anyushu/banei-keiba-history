@@ -7,19 +7,29 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
   const [bretonModalIsOpen, setBretonIsOpen] = useState(false)
   const [bergenModalIsOpen, setBergenIsOpen] = useState(false)
 
+  const modalStyle = {
+    overlay: {
+      zIndex: 99999,
+    },
+    content: {
+      border: 'solid 5px #00B17D',
+      borderRadius: 0,
+    },
+  }
+
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+        } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
@@ -39,14 +49,14 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
         </h2>
         <div className="max-w-[850px] py-4">
           <div className="border border-gray-500 bg-white p-4">
-            <p>
+            <p className="text-xs md:text-base">
               ばん馬は純粋な北海道産と思われがちですが、実はルーツとなった馬は「ペルシュロン種」「ブルトン種」「ベルジャン種」といった西洋生まれの大型馬。明治時代に農耕が進むにつれて、小柄で丈夫な「ドサンコ種」よりも大型で力のある外国産馬が求められるようになり、徐々にばん馬のルーツとして浸透していきました。
             </p>
           </div>
-          <h3 className="my-6 text-4xl font-bold">ルーツとなった主な純血種</h3>
-          <div>
+          <h3 className="my-3 text-xl font-bold md:my-6 md:text-4xl">ルーツとなった主な純血種</h3>
+          <div className="max-w-[290px] md:max-w-full">
             <div
-              className="relative max-w-[600px] cursor-pointer"
+              className="relative max-w-[250px] cursor-pointer md:max-w-[600px]"
               onClick={() => setPercheronIsOpen(true)}
             >
               <Image
@@ -56,12 +66,12 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
                 alt="ペルシュロン種"
               />
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
-              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-3">
-                <p className="text-right text-white">ペルシュロン種</p>
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-2 md:p-3">
+                <p className="text-right text-xs text-white md:text-base">ペルシュロン種</p>
               </div>
             </div>
             <div
-              className="relative ml-[100px] mt-4 max-w-[600px] cursor-pointer"
+              className="relative mt-4 ml-4 max-w-[250px] cursor-pointer md:ml-[100px] md:max-w-[600px]"
               onClick={() => setBretonIsOpen(true)}
             >
               <Image
@@ -71,12 +81,12 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
                 alt="ブルドン種"
               />
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
-              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-3">
-                <p className="text-right text-white">ブルドン種</p>
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-2 md:p-3">
+                <p className="text-right text-xs text-white md:text-base">ブルドン種</p>
               </div>
             </div>
             <div
-              className="relative ml-[200px] mt-4 max-w-[600px] cursor-pointer"
+              className="relative mt-4 ml-8 max-w-[250px] cursor-pointer md:ml-[200px] md:max-w-[600px]"
               onClick={() => setBergenIsOpen(true)}
             >
               <Image
@@ -86,8 +96,8 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
                 alt="ベルジャン種"
               />
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
-              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-3">
-                <p className="text-right text-white">ベルジャン種</p>
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-2 md:p-3">
+                <p className="text-right text-xs text-white md:text-base">ベルジャン種</p>
               </div>
             </div>
           </div>
@@ -97,15 +107,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
       <Modal
         isOpen={percheronModalIsOpen}
         onRequestClose={() => setPercheronIsOpen(false)}
-        style={{
-          overlay: {
-            zIndex: 99999,
-          },
-          content: {
-            border: 'solid 5px #00B17D',
-            borderRadius: 0,
-          },
-        }}
+        style={modalStyle}
       >
         <button
           className=" absolute top-0 right-0"
@@ -114,16 +116,17 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
           <Image
+            className="mt-auto md:mt-0"
             src="/images/roots_photo_1_zoom.jpg"
             width={720}
             height={512}
             alt="ペルシュロン種"
           />
-          <div className="ml-12">
-            <h3 className="mb-3 text-3xl">ペルシュロン種</h3>
-            <p>
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-3xl">ペルシュロン種</h3>
+            <p className="text-sm md:text-base">
               フランス北西部のぺるしゅ地方原産。
               <br />
               8世紀頃からフランスの重種馬にアラブ種などの血が入ったものとされ、品のある容姿が特徴です。力が強く、性格はおとなしく従順。毛色は芦毛や青毛が多く見られます。ばん馬の祖とされるイレネーや1億円達成馬キンタロー、フクイチもペルシュロン系です。
@@ -135,15 +138,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
       <Modal
         isOpen={bretonModalIsOpen}
         onRequestClose={() => setBretonIsOpen(false)}
-        style={{
-          overlay: {
-            zIndex: 99999,
-          },
-          content: {
-            border: 'solid 5px #00B17D',
-            borderRadius: 0,
-          },
-        }}
+        style={modalStyle}
       >
         <button
           className=" absolute top-0 right-0"
@@ -152,16 +147,17 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
           <Image
+            className="mt-auto md:mt-0"
             src="/images/roots_photo_2_zoom.jpg"
             width={720}
             height={512}
             alt="ペルシュロン種"
           />
-          <div className="ml-12">
-            <h3 className="mb-3 text-3xl">ブルトン種</h3>
-            <p>
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-3xl">ブルトン種</h3>
+            <p className="text-sm md:text-base">
               フランス西部のブルターニュ半島原産。
               <br />
               肉付きがよく頑丈でスタミナがあり、日本には戦後、アングロノルマンに替わって輸入されるようになりました。毛色は栗毛、鹿毛などで、青毛は存在しません。足先に映える距毛（きょもう）が長く多いのが特徴。1億円達成場では、タカラフジがブルトン系です。
@@ -173,15 +169,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
       <Modal
         isOpen={bergenModalIsOpen}
         onRequestClose={() => setBergenIsOpen(false)}
-        style={{
-          overlay: {
-            zIndex: 99999,
-          },
-          content: {
-            border: 'solid 5px #00B17D',
-            borderRadius: 0,
-          },
-        }}
+        style={modalStyle}
       >
         <button
           className=" absolute top-0 right-0"
@@ -190,16 +178,17 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
         >
           <Image src="/images/icon_close.svg" width={52} height={52} alt="close" />
         </button>
-        <div className="flex h-full items-center px-11">
+        <div className="flex h-full flex-col items-center md:flex-row md:px-11">
           <Image
+            className="mt-auto md:mt-0"
             src="/images/roots_photo_3_zoom.jpg"
             width={720}
             height={512}
             alt="ペルシュロン種"
           />
-          <div className="ml-12">
-            <h3 className="mb-3 text-3xl">ベルジャン種</h3>
-            <p>
+          <div className="mt-5 mb-auto md:my-0 md:ml-12">
+            <h3 className="mb-3 text-lg md:text-3xl">ベルジャン種</h3>
+            <p className="text-sm md:text-base">
               ベルギーのブラバント地方原産。
               <br />
               アメリカで人気があり、日本にもたらされたのもアメリカで農耕馬として品種改良されたベルジャン種です。首が太く、がっしりとした体格ながらスピードがあるのが特徴。栗毛が多く見られます。1億円達成場では、マルゼンバージがベルジャン系です。
