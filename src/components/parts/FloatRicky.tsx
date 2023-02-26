@@ -30,7 +30,13 @@ const FloatRicky = ({ activeSection }: { activeSection: number }) => {
           } fixed top-16 right-36 z-10 flex h-[115px] w-[305px] items-center justify-start bg-[url('/images/ricky_float_words.png')] bg-contain bg-no-repeat transition-all duration-500`}
         >
           <div className="px-10">
-            <p className="whitespace-pre-wrap text-xl font-bold">{words[activeSection]}</p>
+            <p
+              className={`whitespace-pre-wrap font-bold ${
+                activeSection == 10 ? 'text-lg' : 'text-xl'
+              }`}
+            >
+              {words[activeSection]}
+            </p>
           </div>
         </div>
       )}
