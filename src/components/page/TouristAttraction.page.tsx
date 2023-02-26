@@ -22,21 +22,21 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50vh] right-[10vw] z-10 transition-all duration-500`}
+        } fixed bottom-[50vh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 transition-all duration-500`}
+        } fixed bottom-[calc(50vh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 transition-all duration-500`}
+        } fixed bottom-[5vh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 md:block`}
       >
         <Image src="/images/banba_front_anime_bless.png" width={144} height={152} alt="息" />
       </div>
@@ -58,7 +58,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
           </span>
         </h2>
         <div className="max-w-[850px] py-4">
-          <div className="flex items-start justify-start">
+          <div className="mt-8 flex items-start justify-start md:mt-0">
             <div className="relative cursor-pointer" onClick={() => setPercheronIsOpen(true)}>
               <Image
                 src="/images/tourist_attraction_1.png"
@@ -66,12 +66,12 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
                 height={480}
                 alt="とかちむら"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-3">
-                <p className="text-center text-white">とかちむら</p>
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-2 md:p-3">
+                <p className="text-center text-xs text-white md:text-base">とかちむら</p>
               </div>
             </div>
             <div
-              className="relative mx-4 mt-[100px] cursor-pointer"
+              className="relative mx-2 mt-[50px] cursor-pointer md:mx-4 md:mt-[100px]"
               onClick={() => setBretonIsOpen(true)}
             >
               <Image
@@ -80,12 +80,12 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
                 height={480}
                 alt="ふれあい動物園"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-3">
-                <p className="text-center text-white">ふれあい動物園</p>
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-2 md:p-3">
+                <p className="text-center text-xs text-white md:text-base">ふれあい動物園</p>
               </div>
             </div>
             <div
-              className="relative mt-[200px] cursor-pointer"
+              className="relative mt-[100px] cursor-pointer md:mt-[200px]"
               onClick={() => setBergenIsOpen(true)}
             >
               <Image
@@ -94,12 +94,12 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
                 height={480}
                 alt="馬の資料館"
               />
-              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-3">
-                <p className="text-center text-white">馬の資料館</p>
+              <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-2 md:p-3">
+                <p className="text-center text-xs text-white md:text-base">馬の資料館</p>
               </div>
             </div>
           </div>
-          <div className="mt-4 border border-gray-500 bg-white p-4">
+          <div className="mt-4 border border-gray-500 bg-white p-4 text-xs md:text-base">
             <p>馬文化が息づく帯広競馬場には、レース以外でも楽しめるスポットがたくさんあります。</p>
           </div>
         </div>
