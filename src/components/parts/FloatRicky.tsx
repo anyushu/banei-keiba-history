@@ -20,19 +20,19 @@ const FloatRicky = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection == 0 || activeSection == 12 ? 'opacity-0' : 'opacity-100'
-        } fixed top-0 right-0 z-10 h-60 w-36 bg-[url('/images/ricky_float.png')] bg-contain bg-no-repeat transition-all duration-500`}
+        } fixed -left-10 bottom-0 z-10 h-[100px] w-[100px] bg-[url('/images/ricky_float_sp.png')] bg-contain bg-no-repeat transition-all duration-500 md:left-auto md:bottom-auto md:top-0 md:right-0 md:h-60 md:w-36 md:bg-[url('/images/ricky_float.png')]`}
       ></div>
       {/* リッキーくん吹き出し */}
       {activeSection in words && (
         <div
           className={`${
             activeSection == 0 || activeSection == 12 ? 'opacity-0' : 'opacity-100'
-          } fixed top-16 right-36 z-10 flex h-[115px] w-[305px] items-center justify-start bg-[url('/images/ricky_float_words.png')] bg-contain bg-no-repeat transition-all duration-500`}
+          } fixed left-[60px] bottom-[40px] top-auto right-auto z-10 flex h-[60px] w-[140px] items-center justify-start bg-[url('/images/ricky_float_words_sp.png')] bg-contain bg-no-repeat transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36 md:h-[115px] md:w-[305px] md:bg-[url('/images/ricky_float_words.png')]`}
         >
-          <div className="px-10">
+          <div className="pl-5 pr-1 md:px-10">
             <p
               className={`whitespace-pre-wrap font-bold ${
-                activeSection == 10 ? 'text-lg' : 'text-xl'
+                activeSection == 10 ? 'text-xs md:text-lg' : 'text-xs md:text-xl'
               }`}
             >
               {words[activeSection]}

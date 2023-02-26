@@ -53,7 +53,7 @@ const Home: NextPage = () => {
                   <Start fullpageApi={fullpageApi} />
 
                   {/* 1ページ目 */}
-                  <div className="section bg-[url('/images/bg_1.png')] bg-cover bg-no-repeat">
+                  <div className="section bg-[url('/images/bg_1_sp.png')] bg-cover bg-no-repeat md:bg-[url('/images/bg_1.png')]">
                     <div className="container mx-auto h-screen w-screen"></div>
                   </div>
 
