@@ -26,6 +26,7 @@ const config = {
         'size-90%': '90% 90%',
         'size-100%': '100% 100%',
         'size-110%': '110% 110%',
+        'size-150%': '150% 150%',
       },
       animation: {
         'fade-in': 'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
