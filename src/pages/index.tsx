@@ -59,9 +59,17 @@ const Home: NextPage = () => {
                     <div className="container mx-auto h-[100svh] w-screen">
                       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
                         <Image
+                          className="hidden md:block"
                           src="/images/ricky_words_pc_1.svg"
                           width={305.54}
                           height={115.17}
+                          alt="レーススタート！"
+                        />
+                        <Image
+                          className="block md:hidden"
+                          src="/images/ricky_words_sp_1.svg"
+                          width={145}
+                          height={60}
                           alt="レーススタート！"
                         />
                       </div>
@@ -75,9 +83,17 @@ const Home: NextPage = () => {
                   <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
                     <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
                       <Image
+                        className="hidden md:block"
                         src="/images/ricky_words_pc_3.svg"
                         width={305.54}
                         height={115.17}
+                        alt="最初の関門第一障害！"
+                      />
+                      <Image
+                        className="block md:hidden"
+                        src="/images/ricky_words_sp_3.svg"
+                        width={145}
+                        height={60}
                         alt="最初の関門第一障害！"
                       />
                     </div>
@@ -106,9 +122,17 @@ const Home: NextPage = () => {
                   <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
                     <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
                       <Image
+                        className="hidden md:block"
                         src="/images/ricky_words_pc_6.svg"
                         width={305.54}
                         height={137}
+                        alt="第二障害！力を貯めろ！"
+                      />
+                      <Image
+                        className="block md:hidden"
+                        src="/images/ricky_words_sp_6.svg"
+                        width={145}
+                        height={60}
                         alt="第二障害！力を貯めろ！"
                       />
                     </div>
@@ -167,9 +191,17 @@ const Home: NextPage = () => {
                   <div className="section bg-[url('/images/bg_4_sp.png')] md:bg-[url('/images/bg_4.png')]">
                     <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
                       <Image
+                        className="hidden md:block"
                         src="/images/ricky_words_pc_11.svg"
                         width={305.54}
                         height={137}
+                        alt="後一踏ん張り"
+                      />
+                      <Image
+                        className="block md:hidden"
+                        src="/images/ricky_words_sp_11.svg"
+                        width={145}
+                        height={60}
                         alt="後一踏ん張り"
                       />
                     </div>

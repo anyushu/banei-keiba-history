@@ -5,9 +5,17 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
     <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
         <Image
+          className="hidden md:block"
           src="/images/ricky_words_pc_7.svg"
           width={305.54}
           height={137}
+          alt="今も大切に受け継がれています！"
+        />
+        <Image
+          className="block md:hidden"
+          src="/images/ricky_words_sp_7.svg"
+          width={145}
+          height={60}
           alt="今も大切に受け継がれています！"
         />
       </div>

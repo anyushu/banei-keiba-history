@@ -6,9 +6,17 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
     <div className="section bg-[url('/images/bg_1_sp.png')] md:bg-[url('/images/bg_1.png')]">
       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
         <Image
+          className="hidden md:block"
           src="/images/ricky_words_pc_2.svg"
           width={305.54}
           height={115.17}
+          alt="世界でも例のないユニークな競馬！"
+        />
+        <Image
+          className="block md:hidden"
+          src="/images/ricky_words_sp_2.svg"
+          width={145}
+          height={60}
           alt="世界でも例のないユニークな競馬！"
         />
       </div>
