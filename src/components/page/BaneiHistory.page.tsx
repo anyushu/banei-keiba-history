@@ -171,9 +171,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   北海道を開拓したばん馬
                 </h3>
                 <p className="text-xs md:text-base">
-                  北海道・十勝に初めて馬が足を踏み入れたのは、江戸幕府の時代からでした。
-                  <br />
-                  北海道和種馬「ドサンコ」種が生まれ、続いて大きい外国産馬が輸入されたことで「ばん馬」のルーツである馬達が北海道の農耕を耕しました。
+                  明治時代（1880年代）。馬は開拓の動力として山から木を運び、抜根し、人々と共に北海道の原野を切り開きます。それまでの小柄な「ドサンコ」よりも海外の大型馬が輸入され、より力のある大きな馬達が使われるようになりました。この大型馬が「ばん馬」です。
                 </p>
                 <p className="mt-3 text-right text-xs md:text-base">写真/馬の資料館</p>
               </div>
@@ -191,9 +189,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   ルーツである「お祭りばん馬」
                 </h3>
                 <p className="text-xs md:text-base">
-                  農村ではばん馬の力を競わせる娯楽として「お祭りばん馬」が誕生しました。これがばんえい競馬のルーツです。
-                  <br />
-                  「そりに乗って馬を操る」というスタイルは、当時の外国人指導者による「馬を一人で操れる技術」が元と言われています。
+                  農民たちにとって馬は動力でもあり大切な家族の一員でした。馬の価値や力を試す競争が、神社や地域のお祭りで余興として行われます。「愛馬の力比べ」がばんえい競馬のルーツです。十勝では1908
+                  年に音更町東士幌神社で祭典余興が行われた記録が残っています。
                 </p>
                 <p className="mt-3 text-right text-xs md:text-base">写真/長澤和恵</p>
               </div>
@@ -211,11 +208,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   戦後の復興も馬達とともに
                 </h3>
                 <p className="text-xs md:text-base">
-                  戦時中には軍馬として運用されたばん馬は、戦後では移動や輸送に欠かせない人々の生活の支えとなりました。
-                  <br />
-                  1960年代には「自動車」の台頭によって馬の数が減少していきましたが、その中で残った馬文化が「ばんえい競馬」でした。
+                  戦時中には軍馬として戦地に送り出された歴史もあるばん馬。1946年の終戦後、移動や輸送に欠かせない生活の支えとなりました。1955年に十勝で6万5千頭と、頭数がピークに達します。しかし1960年頃からトラクターが普及し馬は減少。その中で残った馬文化が「ばんえい競馬」でした。
                 </p>
-                <p className="mt-3 text-right text-xs md:text-base">写真/中西関松</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -224,16 +218,14 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                 src="/images/history_slide_4.png"
                 width={600}
                 height={600}
-                alt="4市開催"
+                alt="4市で開催されたばんえい競馬"
               />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
-                  4市開催
+                  4市で開催されたばんえい競馬
                 </h3>
                 <p className="text-xs md:text-base">
-                  1953年から帯広・旭川・北見・岩見沢の4市によるばんえい競馬が始まり、レースコースの変更、道具や技術の統一と現代のばんえい競馬へ近づいていきました。
-                  <br />
-                  さらに「競馬ブーム」によって、認知が全国へと拡大していきました。
+                  1946年に競馬法にのると紆余曲折があるものの、1953年から帯広・旭川・北見・岩見沢市よるばんえい競馬が始まりました。お祭りばん馬がルーツであるため、関係者の創意工夫により公正な仕組みが築き上げられ、1991年に発売額が322億円に達します。しかしバブル崩壊後から売上は低迷。2006年に存続の危機に立たされます。
                 </p>
                 <p className="mt-3 text-right text-xs md:text-base">写真/中西関松</p>
               </div>
@@ -251,11 +243,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   現在のばんえい競馬
                 </h3>
                 <p className="text-xs md:text-base">
-                  2007年にばんえい競馬は民間と連携し「ばんえい十勝」として生まれ変わり、現在では観光の名所としても人々の注目を集めています。
-                  <br />
-                  感染症の中でも衰えず、「ばんえい十勝」は全国で愛される文化として日々発展しています。
+                  2007年、全国のファンや市民有志からの後押しもあり、「ばんえい十勝」として帯広市単独開催でスタート。地元の企業や観光地、お祭りとコラボを行い、大人はもちろんお子様連れの家族などが楽しめる施設として生まれ変わりました。地域に、そしてインターネットで応援してくれるファンに愛される競馬として、100年以上続く馬文化を守り続けます。
                 </p>
-                <p className="mt-3 text-right text-xs md:text-base">　</p>
               </div>
             </SwiperSlide>
           </Swiper>
