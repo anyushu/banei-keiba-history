@@ -11,14 +11,24 @@
 .fullpage-wrapper {
   @apply !w-full !transform-none;
   .fp-section {
-    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-1000 ease-in-out bg-size-90% bg-center bg-no-repeat;
+    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-700 ease-out bg-size-90% bg-center bg-no-repeat;
+    .container {
+      & > div {
+        @apply transition-all duration-300 ease-out scale-50;
+      }
+    }
     &.active {
       @apply visible opacity-100 z-[1] bg-size-110% bg-center bg-no-repeat;
+      .container {
+        & > div {
+          @apply scale-100;
+        }
+      }
     }
     .fp-slidesContainer {
       @apply !w-full !transform-none;
       .fp-slide {
-        @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-1000 ease-in-out;
+        @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-1000 ease-out;
         &.active {
           @apply visible opacity-100 z-[1];
         }
