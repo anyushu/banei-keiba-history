@@ -73,7 +73,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
             </span>
           </span>
         </h2>
-        <div className="max-w-[290px] py-2 sm:max-w-[850px] md:py-4">
+        <div className="max-w-[270px] py-2 sm:max-w-[850px] md:py-4">
           <div className="mt-8 flex items-start justify-start md:mt-0">
             <div className="relative cursor-pointer" onClick={() => setPercheronIsOpen(true)}>
               <Image
@@ -146,7 +146,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
           />
           <div className="mt-5 mb-auto md:my-0 md:ml-12">
             <h3 className="mb-3 text-lg md:text-3xl">とかちむら</h3>
-            <p className="text-sm md:text-base">
+            <p className="text-xs md:text-base">
               土・日・月曜日のレース開催日以外もオープンしている観光交流拠点。
               <br />
               十勝の農家直送の新鮮野菜やお土産が並ぶ「産直市場」、豚丼やスイーツ、こだわりのコーヒーが味わえる「キッチン」、カフェとアウトドアを発信する「スイーツ&セレクト」。
@@ -182,7 +182,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
           />
           <div className="mt-5 mb-auto md:my-0 md:ml-12">
             <h3 className="mb-3 text-lg md:text-3xl">ふれあい動物園</h3>
-            <p className="mb-3 text-sm md:text-base">
+            <p className="mb-3 text-xs md:text-base">
               引退したばん馬の他、ポニーなど様々な馬の種類がいます。ヤギやウサギなどの小動物もおり、小さなお子様から気軽に動物にふれあえます。1カップ100円のにんじんやりは大人気です。
             </p>
             <p className="text-sm md:text-base">
@@ -217,20 +217,20 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
           />
           <div className="mt-5 mb-auto md:my-0 md:ml-12">
             <h3 className="mb-3 text-lg md:text-3xl">馬の資料館</h3>
-            <p className="mb-3 text-sm md:text-base">
+            <p className="mb-3 text-xs md:text-base">
               十勝の開拓と馬は切り離せません。畑を耕し荷物を運び大活躍していました。
               <br />
               昔は人と馬は家族でした。資料館ではそんな馬と人とのかかわりについて学ぶことができます。
             </p>
-            <p className="mb-3 text-sm md:text-base">
+            <p className="mb-3 text-xs md:text-base">
               資料館には、ばんえいを形成した農機具のレプリカや馬耕の再現風景が設置されており、2階ではばんえいに関する映像を視聴することもできます。
             </p>
-            <p className="mb-3 text-sm md:text-base">
+            <p className="mb-3 text-xs md:text-base">
               十勝の馬文化の発信地として、多くの観光客が立ち寄る本館。
               <br />
               ぜひ一度足を運んでみてください。
             </p>
-            <p className="text-sm md:text-base">
+            <p className="text-xs md:text-base">
               入館料：無料
               <br />
               撮影：全館撮影可能

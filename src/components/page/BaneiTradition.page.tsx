@@ -4,7 +4,7 @@ import Zoom from 'react-medium-image-zoom'
 const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
   return (
     <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
-      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+      <div className="fixed left-[60px] bottom-[10px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
         <Image
           className="hidden md:block"
           src="/images/ricky_words_pc_7.svg"
