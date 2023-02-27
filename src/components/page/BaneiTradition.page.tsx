@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Zoom from 'react-medium-image-zoom'
 
 const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
   return (
@@ -57,12 +58,14 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
         </h2>
         <div className="max-w-[850px] py-4">
           <div className="flex items-start justify-center">
-            <Image
-              src="/images/tradition_photo_1.png"
-              width={848}
-              height={330}
-              alt="ばんえい競馬の伝統"
-            />
+            <Zoom>
+              <Image
+                src="/images/tradition_photo_1.png"
+                width={848}
+                height={330}
+                alt="ばんえい競馬の伝統"
+              />
+            </Zoom>
           </div>
           <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
             <h3 className="mb-2 font-bold md:mb-4 md:text-xl">継承されてきた道具</h3>
@@ -73,24 +76,50 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
             </p>
           </div>
           <div className="mt-2 grid max-w-[260px] grid-cols-3 gap-2 md:mt-4 md:max-w-full md:grid-cols-4 md:grid-rows-2 md:gap-4">
-            <div className="relative col-span-2 row-span-2">
-              <Image fill src="/images/tradition_photo_2.png" alt="ばんえい競馬の伝統" />
+            <div className="col-span-2 row-span-2">
+              <Zoom
+                zoomImg={{
+                  src: '/images/tradition_photo_2_zoom.jgp',
+                  width: '553',
+                  height: '784',
+                  style: {},
+                }}
+              >
+                <Image
+                  src="/images/tradition_photo_2.png"
+                  width={800}
+                  height={694}
+                  alt="ばんえい競馬の伝統"
+                />
+              </Zoom>
             </div>
             <div className="relative col-span-1">
-              <Image
-                src="/images/tradition_photo_3.png"
-                width={400}
-                height={347}
-                alt="ばんえい競馬の伝統"
-              />
+              <Zoom
+                zoomImg={{
+                  src: '/images/tradition_photo_3_zoom.jgp',
+                }}
+              >
+                <Image
+                  src="/images/tradition_photo_3.png"
+                  width={400}
+                  height={347}
+                  alt="ばんえい競馬の伝統"
+                />
+              </Zoom>
             </div>
             <div className="relative col-span-1">
-              <Image
-                src="/images/tradition_photo_4.png"
-                width={400}
-                height={347}
-                alt="ばんえい競馬の伝統"
-              />
+              <Zoom
+                zoomImg={{
+                  src: '/images/tradition_photo_4_zoom.jgp',
+                }}
+              >
+                <Image
+                  src="/images/tradition_photo_4.png"
+                  width={400}
+                  height={347}
+                  alt="ばんえい競馬の伝統"
+                />
+              </Zoom>
             </div>
             <div className="col-span-3 border border-gray-500 bg-white p-2 md:col-span-2 md:p-4">
               <p className="text-xs md:text-base">
