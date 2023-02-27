@@ -1,8 +1,22 @@
+/* eslint-disable tailwindcss/no-custom-classname */
+import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import Image from 'next/image'
-import { Autoplay, EffectFade, Pagination } from 'swiper'
+import { useState } from 'react'
+import SwiperCalss, { Autoplay, EffectFade, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
+  const [swiper, setSwiperInstance] = useState<SwiperCalss>()
+  const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
+
+  const stepsLength = 5
+  const slidesProgress = useMotionValue(0.1)
+  const pathPos = useTransform(slidesProgress, [0, stepsLength], [0, 1])
+  const pathLength = useSpring(pathPos, { stiffness: 400, damping: 80 })
+
+  const autoplayTime = 4000
+  const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
+
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
@@ -44,33 +58,107 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
         </h2>
 
         <div className="relative max-w-[270px] py-4 md:max-w-[850px]">
-          <Image
-            className="absolute top-5 left-1/2 z-10 max-w-[255px] translate-x-[-50%] md:top-9 md:max-w-[550px]"
-            src="/images/history_slide_progress.svg"
-            width={550}
-            height={550}
-            alt="history_slide_progress"
-          />
           <Swiper
-            loop={true}
+            onSwiper={(swiper) => setSwiperInstance(swiper)}
+            modules={[Autoplay, EffectFade, Pagination]}
             effect={'fade'}
+            fadeEffect={{
+              crossFade: true,
+            }}
             autoplay={{
-              delay: 3000,
+              delay: autoplayTime,
               disableOnInteraction: false,
             }}
             slidesPerView={1}
-            modules={[Autoplay, EffectFade, Pagination]}
+            onSlideChange={(swiper) => {
+              const { realIndex } = swiper
+              slidesProgress.set(realIndex)
+              setActiveSlideIndex(realIndex)
+            }}
           >
-            <SwiperSlide>
-              <div className="relative mx-auto">
-                <Image
-                  className="mx-auto"
-                  src="/images/history_slide_1.png"
-                  width={600}
-                  height={600}
-                  alt="北海道を開拓したばん馬"
-                />
+            <div className="absolute left-1/2 top-0 z-10 w-[275px] translate-x-[-50%] md:w-[610px]">
+              <div className="circle circle-1" id="circle">
+                <svg id="progressCircle" viewBox="0 0 36 36" className="rotate-[-144deg]">
+                  <path
+                    className="pathBG"
+                    d={circlePath}
+                    fill="none"
+                    stroke="rgba(255, 255, 255, 1)"
+                    strokeWidth="0.3"
+                  />
+                  <motion.path
+                    className="path"
+                    d={circlePath}
+                    fill="none"
+                    stroke="#00B17D"
+                    strokeWidth="0.4"
+                    style={{
+                      pathLength,
+                    }}
+                  />
+                  <g className="[&_circle]:cursor-pointer">
+                    <circle
+                      r="0.7"
+                      fill={`#${activeSlideIndex >= 0 ? '00B17D' : 'ffffff'}`}
+                      style={{
+                        transform: 'translate(18px, 2.0845px)',
+                      }}
+                      onClick={() => {
+                        swiper?.slideTo(0)
+                      }}
+                    ></circle>
+                    <circle
+                      r="0.7"
+                      fill={`#${activeSlideIndex >= 1 ? '00B17D' : 'ffffff'}`}
+                      style={{
+                        transform: 'translate(33.1366px, 13.0819px)',
+                      }}
+                      onClick={() => {
+                        swiper?.slideTo(1)
+                      }}
+                    ></circle>
+                    <circle
+                      r="0.7"
+                      fill={`#${activeSlideIndex >= 2 ? '00B17D' : 'ffffff'}`}
+                      style={{
+                        transform: 'translate(27.3548px, 30.876px)',
+                      }}
+                      onClick={() => {
+                        swiper?.slideTo(2)
+                      }}
+                    ></circle>
+                    <circle
+                      r="0.7"
+                      fill={`#${activeSlideIndex >= 3 ? '00B17D' : 'ffffff'}`}
+                      style={{
+                        transform: 'translate(8.6449px, 30.8758px)',
+                      }}
+                      onClick={() => {
+                        swiper?.slideTo(3)
+                      }}
+                    ></circle>
+                    <circle
+                      r="0.7"
+                      fill={`#${activeSlideIndex >= 4 ? '00B17D' : 'ffffff'}`}
+                      style={{
+                        transform: 'translate(2.86356px, 13.0815px)',
+                      }}
+                      onClick={() => {
+                        swiper?.slideTo(4)
+                      }}
+                    ></circle>
+                  </g>
+                </svg>
               </div>
+            </div>
+            <SwiperSlide>
+              <Image
+                className="mx-auto"
+                src="/images/history_slide_1.png"
+                width={600}
+                height={600}
+                alt="北海道を開拓したばん馬"
+              />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   北海道を開拓したばん馬
@@ -84,15 +172,13 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative mx-auto">
-                <Image
-                  className="mx-auto"
-                  src="/images/history_slide_2.png"
-                  width={600}
-                  height={600}
-                  alt="ルーツである「お祭りばん馬」"
-                />
-              </div>
+              <Image
+                className="mx-auto"
+                src="/images/history_slide_2.png"
+                width={600}
+                height={600}
+                alt="ルーツである「お祭りばん馬」"
+              />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   ルーツである「お祭りばん馬」
@@ -106,15 +192,13 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative mx-auto">
-                <Image
-                  className="mx-auto"
-                  src="/images/history_slide_3.png"
-                  width={600}
-                  height={600}
-                  alt="戦後の復興も馬達とともに"
-                />
-              </div>
+              <Image
+                className="mx-auto"
+                src="/images/history_slide_3.png"
+                width={600}
+                height={600}
+                alt="戦後の復興も馬達とともに"
+              />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   戦後の復興も馬達とともに
@@ -128,15 +212,13 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative mx-auto">
-                <Image
-                  className="mx-auto"
-                  src="/images/history_slide_4.png"
-                  width={600}
-                  height={600}
-                  alt="4市開催"
-                />
-              </div>
+              <Image
+                className="mx-auto"
+                src="/images/history_slide_4.png"
+                width={600}
+                height={600}
+                alt="4市開催"
+              />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   4市開催
@@ -150,15 +232,13 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative mx-auto">
-                <Image
-                  className="mx-auto"
-                  src="/images/history_slide_5.png"
-                  width={600}
-                  height={600}
-                  alt="現在のばんえい競馬"
-                />
-              </div>
+              <Image
+                className="mx-auto"
+                src="/images/history_slide_5.png"
+                width={600}
+                height={600}
+                alt="現在のばんえい競馬"
+              />
               <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
                 <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   現在のばんえい競馬
