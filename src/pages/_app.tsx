@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 import 'react-medium-image-zoom/dist/styles.css'
+import 'swiper/css'
+import 'swiper/css/effect-fade'
 
 import type { AppProps } from 'next/app'
 import { DefaultSeo } from 'next-seo'
