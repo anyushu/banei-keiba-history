@@ -9,6 +9,18 @@ import { DefaultSeo } from 'next-seo'
 import { defaultSeo } from '@/utils/next-seo.config'
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  window.onorientationchange = function () {
+    switch (window.orientation) {
+      case 0:
+        break
+      case 90:
+        alert('画面を縦にしてください')
+        break
+      case -90:
+        alert('画面を縦にしてください')
+        break
+    }
+  }
   return (
     <>
       <DefaultSeo {...defaultSeo} />
