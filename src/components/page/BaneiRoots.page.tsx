@@ -66,7 +66,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
         <div className="max-w-[850px] py-4">
           <div className="border border-gray-500 bg-white p-2 md:p-4">
             <p className="text-xs md:text-base">
-              ばん馬は純粋な北海道産と思われがちですが、実はルーツとなった馬は「ペルシュロン種」「ブルトン種」「ベルジャン種」といった西洋生まれの大型馬。明治時代に農耕が進むにつれて、小柄で丈夫な「ドサンコ種」よりも大型で力のある外国産馬が求められるようになり、徐々にばん馬のルーツとして浸透していきました。
+              ばん馬は、小柄で丈夫な「ドサンコ」と思われがちですが、ルーツは外国から輸入された大型馬。「ペルシュロン種」「ブルトン種」「ベルジャン種」の純血種をもとにした交雑種で、「日本輓系（ばんけい）種」が主流です。サラブレッドの2倍、体重1トンを超える馬が数多くいます。
             </p>
           </div>
           <h3 className="my-3 text-xl font-bold md:my-6 md:text-4xl">ルーツとなった主な純血種</h3>
@@ -90,15 +90,10 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
               className="relative mt-4 ml-4 max-w-[250px] cursor-pointer md:ml-[100px] md:max-w-[600px]"
               onClick={() => setBretonIsOpen(true)}
             >
-              <Image
-                src="/images/roots_photo_2.png"
-                width={600}
-                height={200}
-                alt="ブルドン種"
-              />
+              <Image src="/images/roots_photo_2.png" width={600} height={200} alt="ブルトン種" />
               {/* eslint-disable-next-line tailwindcss/migration-from-tailwind-2 */}
               <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-2 md:p-3">
-                <p className="text-right text-xs text-white md:text-base">ブルドン種</p>
+                <p className="text-right text-xs text-white md:text-base">ブルトン種</p>
               </div>
             </div>
             <div
@@ -143,9 +138,9 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
           <div className="mt-5 mb-auto md:my-0 md:ml-12">
             <h3 className="mb-3 text-lg md:text-3xl">ペルシュロン種</h3>
             <p className="text-sm md:text-base">
-              フランス北西部のぺるしゅ地方原産。
+              フランス北西部のペルシュ地方原産。
               <br />
-              8世紀頃からフランスの重種馬にアラブ種などの血が入ったものとされ、品のある容姿が特徴です。力が強く、性格はおとなしく従順。毛色は芦毛や青毛が多く見られます。ばん馬の祖とされるイレネーや1億円達成馬キンタロー、フクイチもペルシュロン系です。
+              8世紀頃からフランスの重種馬にアラブ種などの血が入ったものとされ、品のある容姿が特徴です。力が強く、性格はおとなしく従順。毛色は芦毛や青毛が多く見られます。
             </p>
           </div>
         </div>
@@ -176,7 +171,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
             <p className="text-sm md:text-base">
               フランス西部のブルターニュ半島原産。
               <br />
-              肉付きがよく頑丈でスタミナがあり、日本には戦後、アングロノルマンに替わって輸入されるようになりました。毛色は栗毛、鹿毛などで、青毛は存在しません。足先に映える距毛（きょもう）が長く多いのが特徴。1億円達成場では、タカラフジがブルトン系です。
+              肉付きがよく頑丈でスタミナがあり、日本には戦後、アングロノルマンに替わって輸入されるようになりました。毛色は栗毛、鹿毛などで、青毛は存在しません。足先に映える距毛（きょもう）が長く多いのが特徴。
             </p>
           </div>
         </div>
@@ -207,7 +202,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
             <p className="text-sm md:text-base">
               ベルギーのブラバント地方原産。
               <br />
-              アメリカで人気があり、日本にもたらされたのもアメリカで農耕馬として品種改良されたベルジャン種です。首が太く、がっしりとした体格ながらスピードがあるのが特徴。栗毛が多く見られます。1億円達成場では、マルゼンバージがベルジャン系です。
+              アメリカで人気があり、日本にもたらされたのもアメリカで農耕馬として品種改良されたベルジャン種です。首が太く、がっしりとした体格ながらスピードがあるのが特徴。栗毛が多く見られます。
             </p>
           </div>
         </div>
