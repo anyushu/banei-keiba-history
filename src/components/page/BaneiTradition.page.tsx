@@ -123,9 +123,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
             </div>
             <div className="col-span-3 border border-gray-500 bg-white p-2 md:col-span-2 md:p-4">
               <p className="text-xs md:text-base">
-                ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競争用具があります。
-                <br />
-                馬具の製造技術が途絶えたことで、関係者は今ある道具を大切に受け継ぐことでばんえい競馬を守っています。
+                騎手は、馬に自らの意志を伝えるために手綱やべんによってそりの上から指示を出さなければならないため、馬と周囲の状況を見ながら的確に道具を操るという、極めて高度な技術を習得する必要があります。
               </p>
             </div>
           </div>
