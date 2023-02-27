@@ -17,6 +17,10 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const autoplayTime = 4000
   const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
 
+  if (activeSection == 4 && swiper) {
+    swiper.autoplay.start()
+  }
+
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
@@ -59,7 +63,10 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
 
         <div className="relative max-w-[270px] py-4 md:max-w-[850px]">
           <Swiper
-            onSwiper={(swiper) => setSwiperInstance(swiper)}
+            onSwiper={(swiper) => {
+              swiper.autoplay.stop()
+              setSwiperInstance(swiper)
+            }}
             modules={[Autoplay, EffectFade, Pagination]}
             effect={'fade'}
             fadeEffect={{
