@@ -45,7 +45,7 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
             </span>
           </span>
         </h2>
-        <div className="py-2 sm:max-w-[850px] md:py-4">
+        <div className="max-w-[290px] py-2 sm:max-w-[850px] md:py-4">
           <div className="grid grid-cols-2 gap-2 md:gap-4">
             <div className="col-span-2">
               <Zoom>
@@ -71,7 +71,7 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
               />
             </Zoom>
           </div>
-          <div className="mt-4 border border-gray-500 bg-white p-4">
+          <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
             <p className="text-xs md:text-base">
               農耕から独自に発展した「ばんえい競馬」は、一般的な競馬と異なり、「そり」を曳いて競走する世界唯一の競馬です。
               <br />

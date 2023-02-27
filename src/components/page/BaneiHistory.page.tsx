@@ -43,9 +43,9 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
           </span>
         </h2>
 
-        <div className="relative max-w-[290px] py-4 md:max-w-[850px]">
+        <div className="relative max-w-[270px] py-4 md:max-w-[850px]">
           <Image
-            className="absolute top-5 left-1/2 z-10 max-w-[270px] translate-x-[-50%] md:top-9 md:max-w-[550px]"
+            className="absolute top-5 left-1/2 z-10 max-w-[255px] translate-x-[-50%] md:top-9 md:max-w-[550px]"
             src="/images/history_slide_progress.svg"
             width={550}
             height={550}
@@ -71,8 +71,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   alt="北海道を開拓したばん馬"
                 />
               </div>
-              <div className="mt-4 border border-gray-500 bg-white p-4">
-                <h3 className="mb-4 text-center text-base font-bold md:text-2xl">
+              <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+                <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   北海道を開拓したばん馬
                 </h3>
                 <p className="text-xs md:text-base">
@@ -93,8 +93,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   alt="ルーツである「お祭りばん馬」"
                 />
               </div>
-              <div className="mt-4 border border-gray-500 bg-white p-4">
-                <h3 className="mb-4 text-center text-base font-bold md:text-2xl">
+              <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+                <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   ルーツである「お祭りばん馬」
                 </h3>
                 <p className="text-xs md:text-base">
@@ -115,8 +115,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   alt="戦後の復興も馬達とともに"
                 />
               </div>
-              <div className="mt-4 border border-gray-500 bg-white p-4">
-                <h3 className="mb-4 text-center text-base font-bold md:text-2xl">
+              <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+                <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   戦後の復興も馬達とともに
                 </h3>
                 <p className="text-xs md:text-base">
@@ -137,8 +137,10 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   alt="4市開催"
                 />
               </div>
-              <div className="mt-4 border border-gray-500 bg-white p-4">
-                <h3 className="mb-4 text-center text-base font-bold md:text-2xl">4市開催</h3>
+              <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+                <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
+                  4市開催
+                </h3>
                 <p className="text-xs md:text-base">
                   1953年から帯広・旭川・北見・岩見沢の4市によるばんえい競馬が始まり、レースコースの変更、道具や技術の統一と現代のばんえい競馬へ近づいていきました。
                   <br />
@@ -157,8 +159,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                   alt="現在のばんえい競馬"
                 />
               </div>
-              <div className="mt-4 border border-gray-500 bg-white p-4">
-                <h3 className="mb-4 text-center text-base font-bold md:text-2xl">
+              <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+                <h3 className="mb-2 text-center text-base font-bold md:mb-4 md:text-2xl">
                   現在のばんえい競馬
                 </h3>
                 <p className="text-xs md:text-base">

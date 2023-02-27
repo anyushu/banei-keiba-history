@@ -64,15 +64,15 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
               alt="ばんえい競馬の伝統"
             />
           </div>
-          <div className="mt-4 border border-gray-500 bg-white p-4">
-            <h3 className="mb-4 font-bold md:text-xl">継承されてきた道具</h3>
+          <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
+            <h3 className="mb-2 font-bold md:mb-4 md:text-xl">継承されてきた道具</h3>
             <p className="text-xs md:text-base">
               ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競争用具があります。
               <br />
               馬具の製造技術が途絶えたことで、関係者は今ある道具を大切に受け継ぐことでばんえい競馬を守っています。
             </p>
           </div>
-          <div className="mt-4 grid max-w-[260px] grid-cols-3 gap-2 md:max-w-full md:grid-cols-4 md:grid-rows-2 md:gap-4">
+          <div className="mt-2 grid max-w-[260px] grid-cols-3 gap-2 md:mt-4 md:max-w-full md:grid-cols-4 md:grid-rows-2 md:gap-4">
             <div className="relative col-span-2 row-span-2">
               <Image fill src="/images/tradition_photo_2.png" alt="ばんえい競馬の伝統" />
             </div>
@@ -92,7 +92,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
                 alt="ばんえい競馬の伝統"
               />
             </div>
-            <div className="col-span-3 border border-gray-500 bg-white p-4 md:col-span-2">
+            <div className="col-span-3 border border-gray-500 bg-white p-2 md:col-span-2 md:p-4">
               <p className="text-xs md:text-base">
                 ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競争用具があります。
                 <br />

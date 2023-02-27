@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Goals = () => {
   return (
     <div className="section relative bg-[url('/images/bg_goals_sp.png')] md:bg-[url('/images/bg_goals.png')]">
-      <div className="container relative mx-auto h-[100svh] w-screen py-4">
+      <div className="container relative mx-auto h-[100svh] w-screen overflow-hidden py-4">
         <h2 className="relative pt-[3svh] text-center">
           <Image
             className="inline w-[90px] md:w-auto"
@@ -42,6 +42,13 @@ const Goals = () => {
             height={131.78}
             alt="ばんえい十勝"
           />
+          <Image
+            className="-ml-9 mt-4 block max-w-[80vw] md:hidden"
+            src="/images/goals_ricky_group_sp.svg"
+            width={400}
+            height={167}
+            alt="リッキー"
+          />
         </div>
         <Image
           className="absolute bottom-0 left-0 max-w-[90vw] md:left-auto md:-right-8 md:max-w-[60vw]"
@@ -56,13 +63,6 @@ const Goals = () => {
         src="/images/goals_ricky_group.svg"
         width={667}
         height={614}
-        alt="リッキー"
-      />
-      <Image
-        className="absolute bottom-[20svh] -left-8 block md:hidden"
-        src="/images/goals_ricky_group_sp.svg"
-        width={400}
-        height={167}
         alt="リッキー"
       />
     </div>

@@ -73,7 +73,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
             </span>
           </span>
         </h2>
-        <div className="max-w-[850px] py-4">
+        <div className="max-w-[290px] py-2 sm:max-w-[850px] md:py-4">
           <div className="mt-8 flex items-start justify-start md:mt-0">
             <div className="relative cursor-pointer" onClick={() => setPercheronIsOpen(true)}>
               <Image
@@ -115,8 +115,8 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
           </div>
-          <div className="mt-4 border border-gray-500 bg-white p-4 text-xs md:text-base">
-            <p className="text-sm md:text-base">
+          <div className="mt-4 border border-gray-500 bg-white p-2 text-xs md:p-4 md:text-base">
+            <p className="text-xs md:text-base">
               馬文化が息づく帯広競馬場には、レース以外でも楽しめるスポットがたくさんあります。
             </p>
           </div>

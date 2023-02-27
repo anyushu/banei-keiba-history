@@ -64,7 +64,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
           </span>
         </h2>
         <div className="max-w-[850px] py-4">
-          <div className="border border-gray-500 bg-white p-4">
+          <div className="border border-gray-500 bg-white p-2 md:p-4">
             <p className="text-xs md:text-base">
               ばん馬は純粋な北海道産と思われがちですが、実はルーツとなった馬は「ペルシュロン種」「ブルトン種」「ベルジャン種」といった西洋生まれの大型馬。明治時代に農耕が進むにつれて、小柄で丈夫な「ドサンコ種」よりも大型で力のある外国産馬が求められるようになり、徐々にばん馬のルーツとして浸透していきました。
             </p>
