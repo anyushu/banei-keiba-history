@@ -105,8 +105,8 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
             />
             <Image
               className="cursor-pointer"
-              onClick={() => setSlider2ModalIsOpenOpen(true)}
-              src="/images/famous_horses_2.png"
+              onClick={() => setSlider6ModalIsOpenOpen(true)}
+              src="/images/famous_horses_6.png"
               width={640}
               height={480}
               alt="名馬"
@@ -129,16 +129,16 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
             />
             <Image
               className="cursor-pointer"
-              onClick={() => setSlider5ModalIsOpenOpen(true)}
-              src="/images/famous_horses_5.png"
+              onClick={() => setSlider2ModalIsOpenOpen(true)}
+              src="/images/famous_horses_2.png"
               width={640}
               height={480}
               alt="名馬"
             />
             <Image
               className="cursor-pointer"
-              onClick={() => setSlider6ModalIsOpenOpen(true)}
-              src="/images/famous_horses_6.png"
+              onClick={() => setSlider5ModalIsOpenOpen(true)}
+              src="/images/famous_horses_5.png"
               width={640}
               height={480}
               alt="名馬"
