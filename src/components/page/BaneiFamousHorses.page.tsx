@@ -101,15 +101,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               src="/images/famous_horses_1.png"
               width={640}
               height={480}
-              alt="名馬"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider6ModalIsOpenOpen(true)}
-              src="/images/famous_horses_6.png"
-              width={640}
-              height={480}
-              alt="名馬"
+              alt="イレネー"
             />
             <Image
               className="cursor-pointer"
@@ -117,7 +109,15 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               src="/images/famous_horses_3.png"
               width={640}
               height={480}
-              alt="名馬"
+              alt="キンタロー"
+            />
+            <Image
+              className="cursor-pointer"
+              onClick={() => setSlider6ModalIsOpenOpen(true)}
+              src="/images/famous_horses_6.png"
+              width={640}
+              height={480}
+              alt="マルセンバージ"
             />
             <Image
               className="cursor-pointer"
@@ -125,7 +125,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               src="/images/famous_horses_4.png"
               width={640}
               height={480}
-              alt="名馬"
+              alt="スーパーペガサス"
             />
             <Image
               className="cursor-pointer"
@@ -133,7 +133,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               src="/images/famous_horses_2.png"
               width={640}
               height={480}
-              alt="名馬"
+              alt="カネサブラック"
             />
             <Image
               className="cursor-pointer"
@@ -141,7 +141,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               src="/images/famous_horses_5.png"
               width={640}
               height={480}
-              alt="名馬"
+              alt="ホクショウマサル"
             />
           </Slider>
         </div>
