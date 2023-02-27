@@ -127,6 +127,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
         isOpen={percheronModalIsOpen}
         onRequestClose={() => setPercheronIsOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -162,6 +163,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
         isOpen={bretonModalIsOpen}
         onRequestClose={() => setBretonIsOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -196,6 +198,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
         isOpen={bergenModalIsOpen}
         onRequestClose={() => setBergenIsOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"

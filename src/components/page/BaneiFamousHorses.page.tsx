@@ -151,6 +151,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider1ModalIsOpen}
         onRequestClose={() => setSlider1ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -180,6 +181,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider2ModalIsOpen}
         onRequestClose={() => setSlider2ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -209,6 +211,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider3ModalIsOpen}
         onRequestClose={() => setSlider3ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -238,6 +241,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider4ModalIsOpen}
         onRequestClose={() => setSlider4ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -267,6 +271,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider5ModalIsOpen}
         onRequestClose={() => setSlider5ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
@@ -296,6 +301,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
         isOpen={slider6ModalIsOpen}
         onRequestClose={() => setSlider6ModalIsOpenOpen(false)}
         style={modalStyle}
+        ariaHideApp={false}
       >
         <button
           className=" absolute top-0 right-0"
