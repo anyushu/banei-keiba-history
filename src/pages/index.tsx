@@ -56,7 +56,16 @@ const Home: NextPage = () => {
 
                   {/* 1ページ目 */}
                   <div className="section bg-[url('/images/bg_1_sp.png')]  md:bg-[url('/images/bg_1.png')]">
-                    <div className="container mx-auto h-[100svh] w-screen"></div>
+                    <div className="container mx-auto h-[100svh] w-screen">
+                      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                        <Image
+                          src="/images/ricky_words_pc_1.svg"
+                          width={305.54}
+                          height={115.17}
+                          alt="レーススタート！"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   {/* 2ページ目 */}
@@ -64,6 +73,14 @@ const Home: NextPage = () => {
 
                   {/* 3ページ目 */}
                   <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                      <Image
+                        src="/images/ricky_words_pc_3.svg"
+                        width={305.54}
+                        height={115.17}
+                        alt="最初の関門第一障害！"
+                      />
+                    </div>
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
@@ -82,11 +99,19 @@ const Home: NextPage = () => {
                   {/* 4ページ目 */}
                   <BaneiHistory activeSection={activeSection} />
 
-                  {/* 4ページ目 */}
+                  {/* 5ページ目 */}
                   <BaneiRoots activeSection={activeSection} />
 
-                  {/* 5ページ目 */}
+                  {/* 6ページ目 */}
                   <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                      <Image
+                        src="/images/ricky_words_pc_6.svg"
+                        width={305.54}
+                        height={137}
+                        alt="第二障害！力を貯めろ！"
+                      />
+                    </div>
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
@@ -126,20 +151,28 @@ const Home: NextPage = () => {
                     <div className="container mx-auto h-[100svh] w-screen"></div>
                   </div>
 
-                  {/* 6ページ目 */}
+                  {/* 7ページ目 */}
                   <BaneiTradition activeSection={activeSection} />
 
-                  {/* 7ページ目 */}
+                  {/* 8ページ目 */}
                   <BaneiFamousHorses activeSection={activeSection} />
 
-                  {/* 8ページ目 */}
+                  {/* 9ページ目 */}
                   <TouristAttraction activeSection={activeSection} />
 
-                  {/* 9ページ目 */}
+                  {/* 10ページ目 */}
                   <BaneiMovie activeSection={activeSection} />
 
-                  {/* 10ページ目 */}
+                  {/* 11ページ目 */}
                   <div className="section bg-[url('/images/bg_4_sp.png')] md:bg-[url('/images/bg_4.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                      <Image
+                        src="/images/ricky_words_pc_11.svg"
+                        width={305.54}
+                        height={137}
+                        alt="後一踏ん張り"
+                      />
+                    </div>
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'

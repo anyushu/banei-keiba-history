@@ -4,6 +4,14 @@ import Zoom from 'react-medium-image-zoom'
 const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
   return (
     <div className="section bg-[url('/images/bg_1_sp.png')] md:bg-[url('/images/bg_1.png')]">
+      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+        <Image
+          src="/images/ricky_words_pc_2.svg"
+          width={305.54}
+          height={115.17}
+          alt="世界でも例のないユニークな競馬！"
+        />
+      </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'

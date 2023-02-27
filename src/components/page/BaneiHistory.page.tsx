@@ -5,6 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
+      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+        <Image
+          src="/images/ricky_words_pc_4.svg"
+          width={305.54}
+          height={152}
+          alt="伝統と歴史ある馬文化なのです！"
+        />
+      </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'

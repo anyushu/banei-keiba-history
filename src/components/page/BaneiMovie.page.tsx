@@ -3,6 +3,14 @@ import Image from 'next/image'
 const BaneiMovie = ({ activeSection }: { activeSection: number }) => {
   return (
     <div className="section bg-[url('/images/bg_4_sp.png')] md:bg-[url('/images/bg_4.png')]">
+      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+        <Image
+          src="/images/ricky_words_pc_10.svg"
+          width={362.72}
+          height={191.85}
+          alt="ばんえいの歴史がわかるスペシャルムービーです！"
+        />
+      </div>
       <div
         className={`${
           activeSection > 0 ? 'opacity-100' : 'opacity-0'
