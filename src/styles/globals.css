@@ -62,11 +62,11 @@
 }
 
 .slick-slide {
-  img {
+  & .relative {
     @apply scale-90 transition-all;
   }
   &.slick-active {
-    img {
+    .relative {
       @apply scale-100;
     }
   }

@@ -95,54 +95,84 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               },
             ]}
           >
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider1ModalIsOpenOpen(true)}
-              src="/images/famous_horses_1.png"
-              width={640}
-              height={480}
-              alt="イレネー"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider3ModalIsOpenOpen(true)}
-              src="/images/famous_horses_3.png"
-              width={640}
-              height={480}
-              alt="キンタロー"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider6ModalIsOpenOpen(true)}
-              src="/images/famous_horses_6.png"
-              width={640}
-              height={480}
-              alt="マルセンバージ"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider4ModalIsOpenOpen(true)}
-              src="/images/famous_horses_4.png"
-              width={640}
-              height={480}
-              alt="スーパーペガサス"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider2ModalIsOpenOpen(true)}
-              src="/images/famous_horses_2.png"
-              width={640}
-              height={480}
-              alt="カネサブラック"
-            />
-            <Image
-              className="cursor-pointer"
-              onClick={() => setSlider5ModalIsOpenOpen(true)}
-              src="/images/famous_horses_5.png"
-              width={640}
-              height={480}
-              alt="ホクショウマサル"
-            />
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider1ModalIsOpenOpen(true)}
+                src="/images/famous_horses_1.png"
+                width={640}
+                height={480}
+                alt="イレネー"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">イレネー</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider3ModalIsOpenOpen(true)}
+                src="/images/famous_horses_3.png"
+                width={640}
+                height={480}
+                alt="キンタロー"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">キンタロー</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider6ModalIsOpenOpen(true)}
+                src="/images/famous_horses_6.png"
+                width={640}
+                height={480}
+                alt="マルセンバージ"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">マルセンバージ</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider4ModalIsOpenOpen(true)}
+                src="/images/famous_horses_4.png"
+                width={640}
+                height={480}
+                alt="スーパーペガサス"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">スーパーペガサス</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider2ModalIsOpenOpen(true)}
+                src="/images/famous_horses_2.png"
+                width={640}
+                height={480}
+                alt="カネサブラック"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">カネサブラック</p>
+              </div>
+            </div>
+            <div className="relative">
+              <Image
+                className="w-full cursor-pointer"
+                onClick={() => setSlider5ModalIsOpenOpen(true)}
+                src="/images/famous_horses_5.png"
+                width={640}
+                height={480}
+                alt="ホクショウマサル"
+              />
+              <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-75 p-1 lg:p-3">
+                <p className="text-right text-xs text-white lg:text-base">ホクショウマサル</p>
+              </div>
+            </div>
           </Slider>
         </div>
       </div>
