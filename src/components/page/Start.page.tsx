@@ -16,7 +16,7 @@ const Start = ({ fullpageApi }: { fullpageApi: fullpageApi }) => {
   }
   return (
     <div id="startPage" className="section bg-white">
-      <div className="container z-10 mx-auto h-[100svh] w-screen px-4 md:px-0">
+      <div className="container overflow-x-hidden z-10 mx-auto h-[100svh] w-screen px-4 md:px-0">
         <div className="flex max-w-full items-center justify-start py-4 md:max-w-[33vw] md:py-10">
           <a
             className="mr-3 block"
