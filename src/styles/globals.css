@@ -4,7 +4,10 @@
 
 @layer components {
   .section {
-    @apply overflow-hidden;
+    @apply overflow-hidden justify-start;
+    & > .fp-overflow {
+      @apply max-h-[100svh] h-[100svh];
+    }
   }
 }
 
@@ -19,12 +22,13 @@
 .fullpage-wrapper {
   @apply !w-full !transform-none;
   .fp-section {
-    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-500 ease-out bg-size-150% bg-center bg-no-repeat;
+    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-500 ease-out bg-size-150% bg-center bg-no-repeat overflow-hidden;
     &#startPage,
     &#goalsPage {
       @apply bg-size-100%;
     }
     .container {
+      @apply max-h-[100svh] h-[100svh];
       & > div {
         @apply transition-all duration-500 ease-out scale-[2.5];
       }
