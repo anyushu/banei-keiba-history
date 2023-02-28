@@ -28,7 +28,7 @@
       @apply bg-size-100%;
     }
     .container {
-      @apply h-[100dvh] overflow-x-hidden;
+      @apply h-[100dvh] overflow-x-hidden md:overflow-x-visible;
       & > div {
         @apply transition-all duration-500 ease-out scale-[2.5];
       }
