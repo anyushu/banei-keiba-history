@@ -38,13 +38,20 @@ const Goals = () => {
           </a>
         </div>
         <div className="text-center">
-          <Image
-            className="inline"
-            src="/images/logo_banei_tokachi.png"
-            width={281.42}
-            height={131.78}
-            alt="ばんえい十勝"
-          />
+          <a
+            className="inline-block"
+            href="https://banei-keiba.or.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="inline"
+              src="/images/logo_banei_tokachi.png"
+              width={281.42}
+              height={131.78}
+              alt="ばんえい十勝"
+            />
+          </a>
           <Image
             className="-ml-9 mt-4 block max-w-[80vw] lg:hidden"
             src="/images/goals_ricky_group_sp.svg"
