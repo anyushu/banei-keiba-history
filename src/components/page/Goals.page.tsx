@@ -2,7 +2,10 @@ import Image from 'next/image'
 
 const Goals = () => {
   return (
-    <div className="section relative bg-[url('/images/bg_goals_sp.png')] md:bg-[url('/images/bg_goals.png')]">
+    <div
+      id="goalsPage"
+      className="section relative bg-[url('/images/bg_goals_sp.png')] md:bg-[url('/images/bg_goals.png')]"
+    >
       <div className="container relative mx-auto h-[100svh] w-screen overflow-x-hidden py-4">
         <h2 className="relative pt-[3svh] text-center">
           <Image
