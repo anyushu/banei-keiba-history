@@ -69,7 +69,7 @@ const Goals = () => {
         />
       </div>
       <Image
-        className="absolute bottom-0 left-0 hidden max-w-[35vw] lg:block"
+        className="absolute bottom-0 left-0 hidden max-w-[33vw] lg:block"
         src="/images/goals_ricky_group.svg"
         width={667}
         height={614}
