@@ -19,14 +19,14 @@
 .fullpage-wrapper {
   @apply !w-full !transform-none;
   .fp-section {
-    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-500 ease-in-out bg-size-150% bg-center bg-no-repeat;
+    @apply !w-full absolute left-0 top-0 opacity-0 z-0 transition-all duration-500 ease-out bg-size-150% bg-center bg-no-repeat;
     &#startPage,
     &#goalsPage {
       @apply bg-size-100%;
     }
     .container {
       & > div {
-        @apply transition-all duration-500 ease-in-out scale-150;
+        @apply transition-all duration-500 ease-out scale-150;
       }
     }
     &#startPage,
