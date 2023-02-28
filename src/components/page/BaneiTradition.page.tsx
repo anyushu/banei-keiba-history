@@ -42,7 +42,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
         <Image src="/images/banba_front_anime_bless.png" width={144} height={152} alt="息" />
       </div>
 
-      <div className="container mx-auto h-[100svh] w-screen py-1 px-3 lg:py-4 lg:px-0">
+      <div className="container mx-auto h-[100svh] py-1 px-3 lg:py-4 lg:px-0">
         <h2 className="flex items-center">
           <Image
             className="h-14 w-14 lg:h-auto lg:w-auto"

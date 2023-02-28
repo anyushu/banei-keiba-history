@@ -39,7 +39,6 @@ const Home: NextPage = () => {
 
         <div className={`opacity-0 ${loading == 100 && 'animate-fade-in'}`}>
           <ReactFullpage
-            scrollOverflow={true}
             credits={{ enabled: false }}
             licenseKey={process.env.NEXT_PUBLIC_FULLPAGE_JS_LICENCE_KEY}
             scrollingSpeed={1000}
@@ -58,7 +57,7 @@ const Home: NextPage = () => {
 
                   {/* 1ページ目 */}
                   <div className="section bg-[url('/images/bg_1_sp.png')]  lg:bg-[url('/images/bg_1.png')]">
-                    <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden">
+                    <div className="container mx-auto h-[100svh] overflow-x-hidden">
                       <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                         <Image
                           className="hidden lg:block"
@@ -111,7 +110,7 @@ const Home: NextPage = () => {
                         alt="汗"
                       />
                     </div>
-                    <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden"></div>
+                    <div className="container mx-auto h-[100svh] overflow-x-hidden"></div>
                   </div>
 
                   {/* 4ページ目 */}
@@ -174,7 +173,7 @@ const Home: NextPage = () => {
                         alt="息"
                       />
                     </div>
-                    <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden"></div>
+                    <div className="container mx-auto h-[100svh] overflow-x-hidden"></div>
                   </div>
 
                   {/* 7ページ目 */}
