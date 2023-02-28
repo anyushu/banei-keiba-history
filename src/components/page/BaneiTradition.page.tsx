@@ -42,7 +42,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
         <Image src="/images/banba_front_anime_bless.png" width={144} height={152} alt="息" />
       </div>
 
-      <div className="container overflow-x-hidden mx-auto h-[100svh] w-screen py-4 px-3 md:px-0">
+      <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden py-1 px-3 md:py-4 md:px-0">
         <h2 className="flex items-center">
           <Image
             className="h-14 w-14 md:h-auto md:w-auto"
@@ -56,7 +56,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
             <span className="block text-xs md:text-lg">Tradition of Banei Horse Racing</span>
           </span>
         </h2>
-        <div className="max-w-[260px] py-4 md:max-w-[850px]">
+        <div className="max-w-[260px] py-2 md:max-w-[850px] md:py-4">
           <div className="flex items-start justify-center">
             <Zoom>
               <Image
@@ -68,14 +68,14 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
             </Zoom>
           </div>
           <div className="mt-2 border border-gray-500 bg-white p-2 md:mt-4 md:p-4">
-            <h3 className="mb-2 text-sm font-bold md:mb-4 md:text-xl">継承されてきた道具</h3>
+            <h3 className="text-sm font-bold md:mb-4 md:text-xl">継承されてきた道具</h3>
             <p className="text-xs md:text-base">
               ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競争用具があります。
               <br />
               馬具の製造技術が途絶えたことで、関係者は今ある道具を大切に受け継ぐことでばんえい競馬を守っています。
             </p>
           </div>
-          <div className="mt-2 grid grid-cols-3 gap-2 md:mt-4 md:grid-cols-4 md:grid-rows-2 md:gap-4">
+          <div className="mt-2 grid grid-cols-3 gap-1 md:mt-4 md:grid-cols-4 md:grid-rows-2 md:gap-4">
             <div className="col-span-2 row-span-2">
               <Zoom
                 zoomImg={{
