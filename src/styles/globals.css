@@ -28,7 +28,7 @@
       @apply bg-size-100%;
     }
     .container {
-      @apply max-h-[100svh] h-[100svh];
+      @apply md:max-h-[100svh] md:h-[100svh];
       & > div {
         @apply transition-all duration-500 ease-out scale-[2.5];
       }
