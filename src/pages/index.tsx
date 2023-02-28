@@ -57,18 +57,18 @@ const Home: NextPage = () => {
                   <Start fullpageApi={fullpageApi} />
 
                   {/* 1ページ目 */}
-                  <div className="section bg-[url('/images/bg_1_sp.png')]  md:bg-[url('/images/bg_1.png')]">
+                  <div className="section bg-[url('/images/bg_1_sp.png')]  lg:bg-[url('/images/bg_1.png')]">
                     <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden">
-                      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                      <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                         <Image
-                          className="hidden md:block"
+                          className="hidden lg:block"
                           src="/images/ricky_words_pc_1.svg"
                           width={305.54}
                           height={115.17}
                           alt="レーススタート！"
                         />
                         <Image
-                          className="block md:hidden"
+                          className="block lg:hidden"
                           src="/images/ricky_words_sp_1.svg"
                           width={145}
                           height={60}
@@ -82,17 +82,17 @@ const Home: NextPage = () => {
                   <OnlyOneKeiba activeSection={activeSection} />
 
                   {/* 3ページ目 */}
-                  <div className="section bg-[url('/images/bg_2_sp.png')] md:bg-[url('/images/bg_2.png')]">
-                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                  <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                       <Image
-                        className="hidden md:block"
+                        className="hidden lg:block"
                         src="/images/ricky_words_pc_3.svg"
                         width={305.54}
                         height={115.17}
                         alt="最初の関門第一障害！"
                       />
                       <Image
-                        className="block md:hidden"
+                        className="block lg:hidden"
                         src="/images/ricky_words_sp_3.svg"
                         width={145}
                         height={60}
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
+                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -121,17 +121,17 @@ const Home: NextPage = () => {
                   <BaneiRoots activeSection={activeSection} />
 
                   {/* 6ページ目 */}
-                  <div className="section bg-[url('/images/bg_3_sp.png')] md:bg-[url('/images/bg_3.png')]">
-                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                  <div className="section bg-[url('/images/bg_3_sp.png')] lg:bg-[url('/images/bg_3.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                       <Image
-                        className="hidden md:block"
+                        className="hidden lg:block"
                         src="/images/ricky_words_pc_6.svg"
                         width={305.54}
                         height={137}
                         alt="第二障害！力を貯めろ！"
                       />
                       <Image
-                        className="block md:hidden"
+                        className="block lg:hidden"
                         src="/images/ricky_words_sp_6.svg"
                         width={145}
                         height={60}
@@ -141,7 +141,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 md:block`}
+                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[calc(50svh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 md:block`}
+                      } fixed bottom-[calc(50svh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[5svh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 md:block`}
+                      } fixed bottom-[5svh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"
@@ -190,17 +190,17 @@ const Home: NextPage = () => {
                   <BaneiMovie activeSection={activeSection} />
 
                   {/* 11ページ目 */}
-                  <div className="section bg-[url('/images/bg_4_sp.png')] md:bg-[url('/images/bg_4.png')]">
-                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 md:left-auto md:bottom-auto md:top-16 md:right-36">
+                  <div className="section bg-[url('/images/bg_4_sp.png')] lg:bg-[url('/images/bg_4.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                       <Image
-                        className="hidden md:block"
+                        className="hidden lg:block"
                         src="/images/ricky_words_pc_11.svg"
                         width={305.54}
                         height={137}
                         alt="後一踏ん張り"
                       />
                       <Image
-                        className="block md:hidden"
+                        className="block lg:hidden"
                         src="/images/ricky_words_sp_11.svg"
                         width={145}
                         height={60}
@@ -210,7 +210,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-[30px] bottom-[calc(30svh+20px)] z-10 w-[60px] transition-all duration-500 md:bottom-[50svh] md:right-[10vw] md:w-auto`}
+                      } fixed right-[30px] bottom-[calc(30svh+20px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[50svh] lg:right-[10vw] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -222,7 +222,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-0 bottom-[calc(30svh+30px)] z-10 w-[60px] transition-all duration-500 md:bottom-[calc(50svh+50px)] md:right-[calc(10vw-75px)] md:w-auto`}
+                      } fixed right-0 bottom-[calc(30svh+30px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[calc(50svh+50px)] lg:right-[calc(10vw-75px)] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -234,7 +234,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[10svh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 md:right-[calc(30vw-50px)] md:bottom-[5svh] md:w-auto`}
+                      } fixed bottom-[10svh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 lg:right-[calc(30vw-50px)] lg:bottom-[5svh] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"

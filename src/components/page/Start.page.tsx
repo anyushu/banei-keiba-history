@@ -16,8 +16,8 @@ const Start = ({ fullpageApi }: { fullpageApi: fullpageApi }) => {
   }
   return (
     <div id="startPage" className="section bg-white">
-      <div className="container z-10 mx-auto h-[100svh] w-screen px-4 md:px-0">
-        <div className="flex max-w-full items-center justify-start py-4 md:max-w-[33vw] md:py-10">
+      <div className="container z-10 mx-auto h-[100svh] w-screen px-4 lg:px-0">
+        <div className="flex max-w-full items-center justify-start py-4 lg:max-w-[33vw] lg:py-10">
           <a
             className="mr-3 block"
             href="https://banei-keiba.or.jp/"
@@ -48,9 +48,9 @@ const Start = ({ fullpageApi }: { fullpageApi: fullpageApi }) => {
             />
           </div>
         </div>
-        <div className="my-[15svh] flex items-center justify-center md:my-0">
+        <div className="my-[15svh] flex items-center justify-center lg:my-0">
           <div
-            className="group h-[40svh] w-auto md:h-[50svh]"
+            className="group h-[40svh] w-auto lg:h-[50svh]"
             onMouseOver={changeAfterRicky}
             onMouseOut={changeBeforeRicky}
           >
