@@ -101,7 +101,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
+                      } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -140,7 +140,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50svh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
+                      } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -152,7 +152,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[calc(50svh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 lg:block`}
+                      } fixed bottom-[calc(50dvh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -164,7 +164,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[5svh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 lg:block`}
+                      } fixed bottom-[5dvh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 lg:block`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-[30px] bottom-[calc(30svh+20px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[50svh] lg:right-[10vw] lg:w-auto`}
+                      } fixed right-[30px] bottom-[calc(30dvh+20px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[50dvh] lg:right-[10vw] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -221,7 +221,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-0 bottom-[calc(30svh+30px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[calc(50svh+50px)] lg:right-[calc(10vw-75px)] lg:w-auto`}
+                      } fixed right-0 bottom-[calc(30dvh+30px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[calc(50dvh+50px)] lg:right-[calc(10vw-75px)] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_sweat_1.png"
@@ -233,7 +233,7 @@ const Home: NextPage = () => {
                     <div
                       className={`${
                         activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[10svh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 lg:right-[calc(30vw-50px)] lg:bottom-[5svh] lg:w-auto`}
+                      } fixed bottom-[10dvh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 lg:right-[calc(30vw-50px)] lg:bottom-[5dvh] lg:w-auto`}
                     >
                       <Image
                         src="/images/banba_front_anime_bless.png"
