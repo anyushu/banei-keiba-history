@@ -27,7 +27,7 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
       >
         <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
       </div>
-      <div className="container mx-auto h-[100svh] w-screen overflow-x-hidden py-1 px-3 md:py-4 md:px-0">
+      <div className="container mx-auto h-[100svh] w-screen py-1 px-3 md:py-4 md:px-0">
         <h2 className="flex items-center">
           <Image
             className="h-14 w-14 md:h-auto md:w-auto"
