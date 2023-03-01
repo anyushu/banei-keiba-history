@@ -32,21 +32,20 @@
       & > div {
         @apply transition-all duration-500 ease-out scale-[2.5];
       }
+      &.next-section > div {
+        @apply scale-0;
+      }
     }
     &#startPage,
     &#goalsPage {
-      .container {
-        & > div {
-          @apply scale-100;
-        }
+      .container > div {
+        @apply scale-100;
       }
     }
     &.active {
       @apply visible opacity-100 z-[1] bg-size-100% bg-center bg-no-repeat;
-      .container {
-        & > div {
-          @apply scale-100;
-        }
+      .container > div {
+        @apply scale-100;
       }
     }
     .fp-slidesContainer {
