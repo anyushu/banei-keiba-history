@@ -10,7 +10,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
 
   const stepsLength = 5
-  const slidesProgress = useMotionValue(0.1)
+  const slidesProgress = useMotionValue(0)
   const pathPos = useTransform(slidesProgress, [0, stepsLength], [0, 1])
   const pathLength = useSpring(pathPos, { stiffness: 400, damping: 80 })
 
@@ -81,9 +81,12 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               disableOnInteraction: false,
             }}
             slidesPerView={1}
+            onAutoplayTimeLeft={(swiper, _timeLeft, percentage) => {
+              const { realIndex } = swiper
+              slidesProgress.set(realIndex - percentage + 1)
+            }}
             onSlideChange={(swiper) => {
               const { realIndex } = swiper
-              slidesProgress.set(realIndex)
               setActiveSlideIndex(realIndex)
             }}
           >
