@@ -14,7 +14,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const pathPos = useTransform(slidesProgress, [0, stepsLength], [0, 1])
   const pathLength = useSpring(pathPos, { stiffness: 400, damping: 80 })
 
-  const autoplayTime = 4000
+  const autoplayTime = 10000
   const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
 
   if (activeSection == 4 && swiper) {
