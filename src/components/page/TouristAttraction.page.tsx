@@ -77,8 +77,8 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
             </span>
           </span>
         </h2>
-        <div className="max-w-[270px] py-2 lg:max-w-[850px] lg:py-4">
-          <div className="mt-8 flex items-start justify-start lg:mt-0">
+        <div className="py-2 lg:max-w-[850px] lg:py-4">
+          <div className="flex items-start justify-start">
             <div className="relative cursor-pointer" onClick={() => setPercheronIsOpen(true)}>
               <Image
                 src="/images/tourist_attraction_1.png"
@@ -91,7 +91,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative mx-2 mt-[50px] cursor-pointer lg:mx-4 lg:mt-[100px]"
+              className="relative mx-2 cursor-pointer lg:mx-4 lg:mt-[100px]"
               onClick={() => setBretonIsOpen(true)}
             >
               <Image
@@ -105,7 +105,7 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative mt-[100px] cursor-pointer lg:mt-[200px]"
+              className="relative cursor-pointer lg:mt-[200px]"
               onClick={() => setBergenIsOpen(true)}
             >
               <Image
