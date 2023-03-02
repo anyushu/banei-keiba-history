@@ -46,9 +46,9 @@ const Goals = () => {
           >
             <Image
               className="inline"
-              src="/images/logo_banei_tokachi.png"
-              width={281.42}
-              height={131.78}
+              src="/images/btn-officialsite.svg"
+              width={280}
+              height={70}
               alt="ばんえい十勝"
             />
           </a>
