@@ -19,7 +19,11 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
 
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
-      <div className="fixed left-[60px] bottom-[20px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
+      <div
+        className={`${
+          activeSection == 4 && 'animate-ricky-fade-out'
+        } fixed left-[60px] bottom-[20px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36`}
+      >
         <Image
           className="hidden lg:block"
           src="/images/ricky_words_pc_4.svg"

@@ -31,6 +31,7 @@ const config = {
       animation: {
         'fade-in': 'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both',
         'fade-out': 'fade-out 1s ease both',
+        'ricky-fade-out': 'fade-out 1s ease both 2s',
         'banba-action': 'banba-action 3s ease 0s infinite both',
       },
       keyframes: {
