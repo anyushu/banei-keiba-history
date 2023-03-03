@@ -31,7 +31,9 @@ const Goals = () => {
         </h2>
         <div className="my-5 text-center">
           <a
-            href="#"
+            href="https://ema.toyo-inc.net/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block min-w-[260px] rounded bg-green py-3 px-8 text-2xl text-white hover:opacity-80"
           >
             ＼応援する／
