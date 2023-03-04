@@ -49,6 +49,7 @@ const Home: NextPage = () => {
               setActiveSection(destination.index)
             }}
             fitToSectionDelay={500}
+            navigation={true}
             render={({ fullpageApi }) => {
               return (
                 <ReactFullpage.Wrapper>

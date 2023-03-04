@@ -97,3 +97,22 @@
 .swiper-pagination.swiper-pagination-progressbar {
   @apply z-10 rounded-full;
 }
+
+.fp-viewing-12 #fp-nav,
+.fp-viewing-0 #fp-nav {
+  @apply hidden;
+}
+
+#fp-nav {
+  .fp-right {
+    @apply right-2;
+  }
+  ul {
+    li {
+      &:first-child,
+      &:last-child {
+        @apply hidden;
+      }
+    }
+  }
+}
