@@ -116,16 +116,3 @@
     }
   }
 }
-
-.drawer.drawer-end > .drawer-toggle:checked ~ .drawer-content,
-.drawer-toggle:checked ~ .drawer-content {
-  @apply translate-x-0;
-}
-
-.drawer.drawer-end > .drawer-toggle ~ .drawer-side > .drawer-overlay + * {
-  @apply translate-x-[400%];
-}
-
-.drawer-toggle ~ .drawer-side > .drawer-overlay + * {
-  @apply transition-none;
-}

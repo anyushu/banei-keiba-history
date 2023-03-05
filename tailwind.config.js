@@ -76,12 +76,8 @@ const config = {
         },
       })
     }),
-    require('daisyui'),
     require('@tailwindcss/typography'),
   ],
-  daisyui: {
-    themes: [],
-  },
 }
 
 module.exports = config
