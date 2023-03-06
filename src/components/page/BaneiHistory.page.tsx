@@ -5,6 +5,8 @@ import { useState } from 'react'
 import SwiperCalss, { Autoplay, EffectFade, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { FloatOneSweat } from '@/components/parts'
+
 const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const [swiper, setSwiperInstance] = useState<SwiperCalss>()
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
@@ -39,13 +41,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
           alt="伝統と歴史ある馬文化なのです！"
         />
       </div>
-      <div
-        className={`${
-          activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
-      >
-        <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
-      </div>
+      <FloatOneSweat activeSection={activeSection} />
       <div
         className={`container mx-auto py-1 px-3 lg:py-4 lg:px-0 ${
           activeSection == 3 ? 'next-section' : ''

@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Zoom from 'react-medium-image-zoom'
 
+import { FloatOneSweat } from '@/components/parts'
+
 const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
   return (
     <div className="section bg-[url('/images/bg_1_sp.png')] lg:bg-[url('/images/bg_1.png')]">
@@ -20,13 +22,7 @@ const OnlyOneKeiba = ({ activeSection }: { activeSection: number }) => {
           alt="世界でも例のないユニークな競馬！"
         />
       </div>
-      <div
-        className={`${
-          activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
-      >
-        <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
-      </div>
+      <FloatOneSweat activeSection={activeSection} />
       <div
         className={`container mx-auto py-1 px-3 lg:py-4 lg:px-0 ${
           activeSection == 1 ? 'next-section' : ''

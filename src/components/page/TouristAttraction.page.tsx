@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import Modal from 'react-modal'
 
+import { FloatOneSweat, FloatTwoSweat, FloatBless } from '@/components/parts'
+
 const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
   const [percheronModalIsOpen, setPercheronIsOpen] = useState(false)
   const [bretonModalIsOpen, setBretonIsOpen] = useState(false)
@@ -35,27 +37,9 @@ const TouristAttraction = ({ activeSection }: { activeSection: number }) => {
           alt="気軽に遊びに来てね！"
         />
       </div>
-      <div
-        className={`${
-          activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
-      >
-        <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
-      </div>
-      <div
-        className={`${
-          activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[calc(50dvh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 lg:block`}
-      >
-        <Image src="/images/banba_front_anime_sweat_1.png" width={154} height={107} alt="汗" />
-      </div>
-      <div
-        className={`${
-          activeSection > 0 ? 'opacity-100' : 'opacity-0'
-        } fixed bottom-[5dvh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 lg:block`}
-      >
-        <Image src="/images/banba_front_anime_bless.png" width={144} height={152} alt="息" />
-      </div>
+      <FloatOneSweat activeSection={activeSection} />
+      <FloatTwoSweat activeSection={activeSection} />
+      <FloatBless activeSection={activeSection} />
 
       <div
         className={`container mx-auto py-1 px-3 lg:py-4 lg:px-0 ${

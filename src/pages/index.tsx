@@ -15,7 +15,14 @@ import {
   BaneiMovie,
   Goals,
 } from '@/components/page'
-import { FloatBanbaAction, FloatRicky, FloatScrollIcon } from '@/components/parts'
+import {
+  FloatBanbaAction,
+  FloatRicky,
+  FloatScrollIcon,
+  FloatOneSweat,
+  FloatTwoSweat,
+  FloatBless,
+} from '@/components/parts'
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(0)
@@ -99,18 +106,7 @@ const Home: NextPage = () => {
                         alt="最初の関門第一障害！"
                       />
                     </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_sweat_1.png"
-                        width={154}
-                        height={107}
-                        alt="汗"
-                      />
-                    </div>
+                    <FloatOneSweat activeSection={activeSection} />
                     <div className="container mx-auto overflow-x-hidden"></div>
                   </div>
 
@@ -138,42 +134,8 @@ const Home: NextPage = () => {
                         alt="第二障害！力を貯めろ！"
                       />
                     </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[50dvh] right-[10vw] z-10 hidden transition-all duration-500 lg:block`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_sweat_1.png"
-                        width={154}
-                        height={107}
-                        alt="汗"
-                      />
-                    </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[calc(50dvh+50px)] right-[calc(10vw-75px)] z-10 hidden transition-all duration-500 lg:block`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_sweat_1.png"
-                        width={154}
-                        height={107}
-                        alt="汗"
-                      />
-                    </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[5dvh] right-[calc(30vw-50px)] z-10 hidden transition-all duration-500 lg:block`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_bless.png"
-                        width={144}
-                        height={152}
-                        alt="息"
-                      />
-                    </div>
+                    <FloatOneSweat activeSection={activeSection} />
+                    <FloatTwoSweat activeSection={activeSection} />
                     <div className="container mx-auto overflow-x-hidden"></div>
                   </div>
 
@@ -207,42 +169,9 @@ const Home: NextPage = () => {
                         alt="後一踏ん張り"
                       />
                     </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-[30px] bottom-[calc(30dvh+20px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[50dvh] lg:right-[10vw] lg:w-auto`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_sweat_1.png"
-                        width={154}
-                        height={107}
-                        alt="汗"
-                      />
-                    </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed right-0 bottom-[calc(30dvh+30px)] z-10 w-[60px] transition-all duration-500 lg:bottom-[calc(50dvh+50px)] lg:right-[calc(10vw-75px)] lg:w-auto`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_sweat_1.png"
-                        width={154}
-                        height={107}
-                        alt="汗"
-                      />
-                    </div>
-                    <div
-                      className={`${
-                        activeSection > 0 ? 'opacity-100' : 'opacity-0'
-                      } fixed bottom-[10dvh] right-[calc(25vw)] z-10 w-[60px] transition-all duration-500 lg:right-[calc(30vw-50px)] lg:bottom-[5dvh] lg:w-auto`}
-                    >
-                      <Image
-                        src="/images/banba_front_anime_bless.png"
-                        width={144}
-                        height={152}
-                        alt="息"
-                      />
-                    </div>
+                    <FloatOneSweat activeSection={activeSection} />
+                    <FloatTwoSweat activeSection={activeSection} />
+                    <FloatBless activeSection={activeSection} />
                   </div>
 
                   {/* 最後 */}
