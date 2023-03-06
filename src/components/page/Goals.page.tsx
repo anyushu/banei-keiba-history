@@ -7,7 +7,7 @@ const Goals = () => {
       className="section relative bg-[url('/images/bg_goals_sp.png')] lg:bg-[url('/images/bg_goals.png')]"
     >
       <div className="container relative mx-auto py-4">
-        <h2 className="relative pt-[3dvh] text-center">
+        <h2 className="relative text-center lg:pt-[3dvh]">
           <Image
             className="inline w-[90px] lg:w-auto"
             src="/images/icon_hidume.png"
@@ -34,7 +34,7 @@ const Goals = () => {
             href="https://ema.toyo-inc.net/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block min-w-[260px] rounded bg-green py-3 px-8 text-2xl text-white hover:opacity-80"
+            className="inline-block min-w-[260px] rounded bg-green py-3 px-8 text-white hover:opacity-80 lg:text-2xl"
           >
             ＼応援する／
           </a>

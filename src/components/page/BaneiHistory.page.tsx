@@ -22,7 +22,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
       <div
         className={`${
           activeSection == 4 && 'animate-ricky-fade-out'
-        } fixed left-[60px] bottom-[20px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36`}
+        } fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36`}
       >
         <Image
           className="hidden lg:block"
