@@ -22,7 +22,7 @@ const Goals = () => {
           </span>
 
           <Image
-            className="absolute top-1/2 left-1/2 w-[90px] translate-y-[calc(-50%-25px)] translate-x-[calc(-50%-90px)] lg:w-auto lg:translate-y-0 lg:translate-x-[calc(-50%-18rem)]"
+            className="absolute top-1/2 left-1/2 w-[90px] max-w-[246px] translate-y-[calc(-50%-25px)] translate-x-[calc(-50%-90px)] lg:w-auto lg:translate-y-0 lg:translate-x-[calc(-50%-18rem)]"
             src="/images/goals_stamp.png"
             width={246}
             height={201}
