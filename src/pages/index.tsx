@@ -124,14 +124,14 @@ const Home: NextPage = () => {
                         src="/images/ricky_words_pc_6.svg"
                         width={305.54}
                         height={137}
-                        alt="第二障害！力を貯めろ！"
+                        alt="第二障害！力をためろ！"
                       />
                       <Image
                         className="block lg:hidden"
                         src="/images/ricky_words_sp_6.svg"
                         width={145}
                         height={60}
-                        alt="第二障害！力を貯めろ！"
+                        alt="第二障害！力をためろ！"
                       />
                     </div>
                     <FloatOneSweat activeSection={activeSection} />
