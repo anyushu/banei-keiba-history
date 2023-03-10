@@ -116,3 +116,12 @@
     }
   }
 }
+
+.click-box {
+  &::before {
+    @apply z-10 text-[10px] content-['CLICK!'] absolute lg:top-[0.75rem] top-[8px] lg:right-[0.25rem] right-0 rotate-45 scale-75 lg:scale-100;
+  }
+  &::after {
+    @apply opacity-70 content-[''] absolute top-1 right-1 border-r-[30px] lg:border-r-[50px] border-r-white border-b-[30px] lg:border-b-[50px] border-b-transparent;
+  }
+}

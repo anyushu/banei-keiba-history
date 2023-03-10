@@ -70,7 +70,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
           <h3 className="my-2 text-lg font-bold lg:my-6 lg:text-4xl">ルーツとなった主な純血種</h3>
           <div className="max-w-[290px] lg:max-w-full">
             <div
-              className="relative ml-8 max-w-[250px] cursor-pointer lg:ml-0 lg:max-w-[600px]"
+              className="click-box relative ml-8 max-w-[250px] cursor-pointer lg:ml-0 lg:max-w-[600px]"
               onClick={() => setPercheronIsOpen(true)}
             >
               <Image
@@ -85,7 +85,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative mt-2 ml-4 max-w-[250px] cursor-pointer lg:ml-[100px] lg:max-w-[600px]"
+              className="click-box relative mt-2 ml-4 max-w-[250px] cursor-pointer lg:ml-[100px] lg:max-w-[600px]"
               onClick={() => setBretonIsOpen(true)}
             >
               <Image src="/images/roots_photo_2.png" width={600} height={200} alt="ブルトン種" />
@@ -95,7 +95,7 @@ const BaneiRoots = ({ activeSection }: { activeSection: number }) => {
               </div>
             </div>
             <div
-              className="relative mt-2 max-w-[250px] cursor-pointer lg:ml-[200px] lg:max-w-[600px]"
+              className="click-box relative mt-2 max-w-[250px] cursor-pointer lg:ml-[200px] lg:max-w-[600px]"
               onClick={() => setBergenIsOpen(true)}
             >
               <Image

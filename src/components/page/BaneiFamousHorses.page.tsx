@@ -85,7 +85,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
               },
             ]}
           >
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider1ModalIsOpenOpen(true)}
@@ -98,7 +98,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
                 <p className="text-right text-xs text-white lg:text-base">イレネー</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider3ModalIsOpenOpen(true)}
@@ -111,7 +111,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
                 <p className="text-right text-xs text-white lg:text-base">キンタロー</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider6ModalIsOpenOpen(true)}
@@ -124,7 +124,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
                 <p className="text-right text-xs text-white lg:text-base">マルセンバージ</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider4ModalIsOpenOpen(true)}
@@ -137,7 +137,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
                 <p className="text-right text-xs text-white lg:text-base">スーパーペガサス</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider2ModalIsOpenOpen(true)}
@@ -150,7 +150,7 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
                 <p className="text-right text-xs text-white lg:text-base">カネサブラック</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="click-box relative">
               <Image
                 className="w-full cursor-pointer"
                 onClick={() => setSlider5ModalIsOpenOpen(true)}
