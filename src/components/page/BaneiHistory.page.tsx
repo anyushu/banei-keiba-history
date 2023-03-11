@@ -34,6 +34,8 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
     },
   }
 
+  activeSection == 4 && swiper && swiper?.autoplay?.start()
+
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
       <div
@@ -79,6 +81,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
         <div className="relative max-w-[270px] py-2 lg:max-w-[850px] lg:py-4">
           <Swiper
             onSwiper={(swiper) => {
+              swiper.autoplay.stop()
               setSwiperInstance(swiper)
             }}
             modules={[Autoplay, EffectFade, Pagination]}
@@ -93,7 +96,9 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             slidesPerView={1}
             onAutoplayTimeLeft={(swiper, _timeLeft, percentage) => {
               const { realIndex } = swiper
-              slidesProgress.set(realIndex - percentage + 1)
+              if (percentage > 0) {
+                slidesProgress.set(realIndex - percentage + 1)
+              }
             }}
             onSlideChange={(swiper) => {
               const { realIndex } = swiper
