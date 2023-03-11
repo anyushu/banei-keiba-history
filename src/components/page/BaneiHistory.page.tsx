@@ -14,6 +14,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
   const [modalOpen, setModalOpen] = useState(false)
   const [modalOpenImg, setModalOpenImg] = useState(0)
+  // const [autoPlayHandler, setAutoPlayHandler] = useState(false)
 
   const stepsLength = 5
   const slidesProgress = useMotionValue(0)
@@ -21,6 +22,10 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const pathLength = useSpring(pathPos, { stiffness: 400, damping: 80 })
 
   const autoplayTime = 10000
+  const autoPlayOption = {
+    delay: autoplayTime,
+    disableOnInteraction: false,
+  }
   const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
   const modalStyle = {
     overlay: {
@@ -34,7 +39,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
     },
   }
 
-  activeSection == 4 && swiper && swiper?.autoplay?.start()
+  activeSection == 4 && swiper?.autoplay?.start()
 
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
@@ -81,7 +86,6 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
         <div className="relative max-w-[270px] py-2 lg:max-w-[850px] lg:py-4">
           <Swiper
             onSwiper={(swiper) => {
-              swiper.autoplay.stop()
               setSwiperInstance(swiper)
             }}
             modules={[Autoplay, EffectFade, Pagination]}
@@ -89,10 +93,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             fadeEffect={{
               crossFade: true,
             }}
-            autoplay={{
-              delay: autoplayTime,
-              disableOnInteraction: false,
-            }}
+            autoplay={activeSection != 4 ? false : autoPlayOption}
             slidesPerView={1}
             onAutoplayTimeLeft={(swiper, _timeLeft, percentage) => {
               const { realIndex } = swiper
@@ -189,6 +190,10 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             </div>
             {/* <button
               type="button"
+              onClick={() => {
+                setAutoPlayHandler(autoPlayHandler ? false : true)
+                autoPlayHandler ? swiper?.autoplay.start() : swiper?.autoplay.stop()
+              }}
               className="absolute top-[67.5%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-8 text-white lg:text-xl"
             >
               {`START!`}
