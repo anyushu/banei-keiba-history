@@ -66,10 +66,10 @@ const BaneiFamousHorses = ({ activeSection }: { activeSection: number }) => {
           </span>
         </h2>
 
-        <div className="max-w-[850px] overflow-hidden py-2 lg:py-4">
+        <div className="max-w-[850px] py-2 lg:py-4">
           <Slider
             className="mt-[5dvh]"
-            dots={true}
+            dots={false}
             infinite={true}
             speed={500}
             slidesToShow={1}

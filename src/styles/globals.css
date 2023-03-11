@@ -81,16 +81,16 @@
 }
 
 .slick-prev {
-  @apply left-5;
+  @apply lg:top-[50%] top-[110%] lg:left-5 left-[calc(50%-50px)];
   &::before {
-    @apply w-8 h-8 block content-[''] border-l-4 border-t-4 -rotate-45 border-white;
+    @apply lg:w-8 w-6 lg:h-8 h-6 block content-[''] lg:border-l-4 border-l-2 lg:border-t-4 border-t-2 -rotate-45 lg:border-white border-black;
   }
 }
 
 .slick-next {
-  @apply right-5;
+  @apply lg:top-[50%] top-[110%] lg:right-5 right-[calc(50%-50px)];
   &::before {
-    @apply w-8 h-8 block content-[''] border-r-4 border-t-4 rotate-45 border-white;
+    @apply lg:w-8 w-6 lg:h-8 h-6 block content-[''] lg:border-r-4 border-r-2 lg:border-t-4 border-t-2 rotate-45 lg:border-white border-black;
   }
 }
 
