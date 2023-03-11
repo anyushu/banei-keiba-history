@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable tailwindcss/no-custom-classname */
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
+import Modal from 'react-modal'
 import SwiperCalss, { Autoplay, EffectFade, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -10,6 +12,8 @@ import { FloatOneSweat } from '@/components/parts'
 const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const [swiper, setSwiperInstance] = useState<SwiperCalss>()
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
+  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpenImg, setModalOpenImg] = useState(0)
 
   const stepsLength = 5
   const slidesProgress = useMotionValue(0)
@@ -18,6 +22,17 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
 
   const autoplayTime = 10000
   const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
+  const modalStyle = {
+    overlay: {
+      zIndex: 99999,
+    },
+    content: {
+      border: 'none',
+      borderRadius: 0,
+      backgroundColor: '#fff',
+      inset: 0,
+    },
+  }
 
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
@@ -86,6 +101,13 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             }}
           >
             <div className="absolute left-1/2 top-0 z-10 w-[275px] translate-x-[-50%] lg:w-[610px]">
+              <div
+                onClick={() => {
+                  setModalOpen(true)
+                  setModalOpenImg(swiper?.activeIndex ? swiper?.activeIndex : 0)
+                }}
+                className="absolute top-1/2 left-1/2 z-10 h-[70%] w-[70%] translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full"
+              ></div>
               <div className="circle circle-1" id="circle">
                 <svg id="progressCircle" viewBox="0 0 36 36" className="rotate-[-144deg]">
                   <path
@@ -258,6 +280,30 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
           </Swiper>
         </div>
       </div>
+
+      <Modal
+        isOpen={modalOpen}
+        onRequestClose={() => setModalOpen(false)}
+        style={modalStyle}
+        ariaHideApp={false}
+      >
+        <button
+          className="absolute top-0 right-0"
+          type="button"
+          onClick={() => setModalOpen(false)}
+        >
+          <Image src="/images/icon_close.svg" width={48} height={48} alt="close" />
+        </button>
+        <img
+          className="m-auto"
+          src={
+            modalOpenImg
+              ? `/images/history_slide_${modalOpenImg + 1}_zoom.jpg`
+              : '/images/history_slide_1_zoom.jpg'
+          }
+          alt="伝統と歴史ある馬文化なのです！"
+        />
+      </Modal>
     </div>
   )
 }
