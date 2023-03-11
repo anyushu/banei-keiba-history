@@ -35,6 +35,8 @@ const Home: NextPage = () => {
 
   const [activeSection, setActiveSection] = useState(0)
 
+  console.log(activeSection)
+
   return (
     <>
       <Loading loading={loading} />
@@ -107,16 +109,37 @@ const Home: NextPage = () => {
                       />
                     </div>
                     <FloatOneSweat activeSection={activeSection} />
-                    <div className="container mx-auto overflow-x-hidden"></div>
                   </div>
 
                   {/* 4ページ目 */}
                   <BaneiHistory activeSection={activeSection} />
 
                   {/* 5ページ目 */}
-                  <BaneiRoots activeSection={activeSection} />
+                  <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
+                    <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
+                      <Image
+                        className="hidden lg:block"
+                        src="/images/ricky_words_pc_13.svg"
+                        width={305.54}
+                        height={137}
+                        alt="道中は止まりながら進むよ！"
+                      />
+                      <Image
+                        className="block lg:hidden"
+                        src="/images/ricky_words_sp_13.svg"
+                        width={145}
+                        height={60}
+                        alt="道中は止まりながら進むよ！"
+                      />
+                    </div>
+                    <FloatOneSweat activeSection={activeSection} />
+                    <FloatTwoSweat activeSection={activeSection} />
+                  </div>
 
                   {/* 6ページ目 */}
+                  <BaneiRoots activeSection={activeSection} />
+
+                  {/* 7ページ目 */}
                   <div className="section bg-[url('/images/bg_3_sp.png')] lg:bg-[url('/images/bg_3.png')]">
                     <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                       <Image
@@ -136,22 +159,21 @@ const Home: NextPage = () => {
                     </div>
                     <FloatOneSweat activeSection={activeSection} />
                     <FloatTwoSweat activeSection={activeSection} />
-                    <div className="container mx-auto overflow-x-hidden"></div>
                   </div>
 
-                  {/* 7ページ目 */}
+                  {/* 8ページ目 */}
                   <BaneiTradition activeSection={activeSection} />
 
-                  {/* 8ページ目 */}
+                  {/* 9ページ目 */}
                   <BaneiFamousHorses activeSection={activeSection} />
 
-                  {/* 9ページ目 */}
+                  {/* 10ページ目 */}
                   <TouristAttraction activeSection={activeSection} />
 
-                  {/* 10ページ目 */}
+                  {/* 11ページ目 */}
                   <BaneiMovie activeSection={activeSection} />
 
-                  {/* 11ページ目 */}
+                  {/* 12ページ目 */}
                   <div className="section bg-[url('/images/bg_4_sp.png')] lg:bg-[url('/images/bg_4.png')]">
                     <div className="fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36">
                       <Image

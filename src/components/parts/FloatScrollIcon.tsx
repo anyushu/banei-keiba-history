@@ -4,7 +4,7 @@ const FloatScrollIcon = ({ activeSection }: { activeSection: number }) => {
   return (
     <div
       className={`${
-        activeSection == 0 || activeSection == 12 ? 'opacity-0' : 'opacity-100'
+        activeSection == 0 || activeSection == 13 ? 'opacity-0' : 'opacity-100'
       } fixed right-0 left-auto top-1/2 z-10 translate-y-[-160px] transition-all duration-500 lg:right-0 lg:translate-y-[-180px]`}
     >
       <Image

@@ -8,7 +8,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
     <div className="section bg-[url('/images/bg_3_sp.png')] lg:bg-[url('/images/bg_3.png')]">
       <div
         className={`${
-          activeSection == 7 && 'animate-ricky-fade-out'
+          activeSection == 8 && 'animate-ricky-fade-out'
         } fixed left-[60px] bottom-[40px] top-auto right-auto z-10 transition-all duration-500 lg:left-auto lg:bottom-auto lg:top-16 lg:right-36`}
       >
         <Image
@@ -31,7 +31,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
 
       <div
         className={`container mx-auto py-1 px-3 lg:py-4 lg:px-0 ${
-          activeSection == 6 ? 'next-section' : ''
+          activeSection == 7 ? 'next-section' : ''
         }`}
       >
         <h2 className="flex items-center">
