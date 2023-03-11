@@ -160,6 +160,12 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                 </svg>
               </div>
             </div>
+            {/* <button
+              type="button"
+              className="absolute top-[67.5%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-8 text-white lg:text-xl"
+            >
+              {`START!`}
+            </button> */}
             <SwiperSlide>
               <Image
                 className="mx-auto"
