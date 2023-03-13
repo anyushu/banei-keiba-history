@@ -35,8 +35,6 @@ const Home: NextPage = () => {
 
   const [activeSection, setActiveSection] = useState(0)
 
-  console.log(activeSection)
-
   return (
     <>
       <Loading loading={loading} />

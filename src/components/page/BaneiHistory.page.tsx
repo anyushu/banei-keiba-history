@@ -10,11 +10,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { FloatOneSweat } from '@/components/parts'
 
 const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
-  const [swiper, setSwiperInstance] = useState<SwiperCalss>()
+  const [swiperRef, setSwiperInstance] = useState<SwiperCalss>()
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
   const [modalOpen, setModalOpen] = useState(false)
   const [modalOpenImg, setModalOpenImg] = useState(0)
-  // const [autoPlayHandler, setAutoPlayHandler] = useState(false)
+  const [autoPlayHandler, setAutoPlayHandler] = useState(true)
 
   const stepsLength = 5
   const slidesProgress = useMotionValue(0)
@@ -22,10 +22,6 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const pathLength = useSpring(pathPos, { stiffness: 400, damping: 80 })
 
   const autoplayTime = 10000
-  const autoPlayOption = {
-    delay: autoplayTime,
-    disableOnInteraction: false,
-  }
   const circlePath = 'M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831'
   const modalStyle = {
     overlay: {
@@ -38,8 +34,6 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
       inset: 0,
     },
   }
-
-  activeSection == 4 && swiper?.autoplay?.start()
 
   return (
     <div className="section bg-[url('/images/bg_2_sp.png')] lg:bg-[url('/images/bg_2.png')]">
@@ -88,29 +82,29 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             onSwiper={(swiper) => {
               setSwiperInstance(swiper)
             }}
-            modules={[Autoplay, EffectFade, Pagination]}
             effect={'fade'}
             fadeEffect={{
               crossFade: true,
             }}
-            autoplay={activeSection != 4 ? false : autoPlayOption}
-            slidesPerView={1}
+            autoplay={{
+              delay: autoplayTime,
+              disableOnInteraction: false,
+            }}
             onAutoplayTimeLeft={(swiper, _timeLeft, percentage) => {
               const { realIndex } = swiper
-              if (percentage > 0) {
-                slidesProgress.set(realIndex - percentage + 1)
-              }
+              slidesProgress.set(realIndex - percentage + 1)
             }}
             onSlideChange={(swiper) => {
               const { realIndex } = swiper
               setActiveSlideIndex(realIndex)
             }}
+            modules={[Autoplay, EffectFade, Pagination]}
           >
             <div className="absolute left-1/2 top-0 z-10 w-[275px] translate-x-[-50%] lg:w-[610px]">
               <div
                 onClick={() => {
                   setModalOpen(true)
-                  setModalOpenImg(swiper?.activeIndex ? swiper?.activeIndex : 0)
+                  setModalOpenImg(swiperRef?.activeIndex ? swiperRef?.activeIndex : 0)
                 }}
                 className="absolute top-1/2 left-1/2 z-10 h-[70%] w-[70%] translate-x-[-50%] translate-y-[-50%] cursor-pointer rounded-full"
               ></div>
@@ -141,7 +135,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                         transform: 'translate(18px, 2.0845px)',
                       }}
                       onClick={() => {
-                        swiper?.slideTo(0)
+                        swiperRef?.slideTo(0)
                       }}
                     ></circle>
                     <circle
@@ -151,7 +145,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                         transform: 'translate(33.1366px, 13.0819px)',
                       }}
                       onClick={() => {
-                        swiper?.slideTo(1)
+                        swiperRef?.slideTo(1)
                       }}
                     ></circle>
                     <circle
@@ -161,7 +155,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                         transform: 'translate(27.3548px, 30.876px)',
                       }}
                       onClick={() => {
-                        swiper?.slideTo(2)
+                        swiperRef?.slideTo(2)
                       }}
                     ></circle>
                     <circle
@@ -171,7 +165,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                         transform: 'translate(8.6449px, 30.8758px)',
                       }}
                       onClick={() => {
-                        swiper?.slideTo(3)
+                        swiperRef?.slideTo(3)
                       }}
                     ></circle>
                     <circle
@@ -181,23 +175,23 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
                         transform: 'translate(2.86356px, 13.0815px)',
                       }}
                       onClick={() => {
-                        swiper?.slideTo(4)
+                        swiperRef?.slideTo(4)
                       }}
                     ></circle>
                   </g>
                 </svg>
               </div>
             </div>
-            {/* <button
+            <button
               type="button"
               onClick={() => {
                 setAutoPlayHandler(autoPlayHandler ? false : true)
-                autoPlayHandler ? swiper?.autoplay.start() : swiper?.autoplay.stop()
+                autoPlayHandler ? swiperRef?.autoplay.pause() : swiperRef?.autoplay.resume()
               }}
-              className="absolute top-[67.5%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-8 text-white lg:text-xl"
+              className="absolute top-[48%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-6 text-sm text-white lg:top-[67.5%] lg:px-8 lg:text-xl"
             >
-              {`START!`}
-            </button> */}
+              {autoPlayHandler ? 'STOP' : 'START'}
+            </button>
             <SwiperSlide>
               <Image
                 className="mx-auto"
