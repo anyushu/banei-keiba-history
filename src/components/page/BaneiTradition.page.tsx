@@ -61,7 +61,7 @@ const BaneiTradition = ({ activeSection }: { activeSection: number }) => {
           <div className="mt-2 border border-gray-500 bg-white p-2 lg:mt-4 lg:p-4">
             <h3 className="text-sm font-bold lg:mb-4 lg:text-xl">継承されてきた道具</h3>
             <p className="text-xs lg:text-base">
-              ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競争用具があります。
+              ばんえい競馬は農耕馬・荷役馬から発展したため、馬を操る「馭具」やそりを引く「引き具」など、多数の競走用具があります。
               <br />
               関係者は今ある道具を大切に受け継ぐことでばんえい競馬を守っています。
             </p>
