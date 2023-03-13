@@ -51,7 +51,14 @@ const BaneiMovie = ({ activeSection }: { activeSection: number }) => {
         </h2>
 
         <div className="mt-12 max-w-[850px] py-4 lg:mt-0">
-          <Image src="/images/movie_sample.png" width={961} height={542} alt="sample" />
+          <div className="relative h-0 w-full pt-[56.25%]">
+            <iframe
+              className=" absolute top-0 left-0 h-full w-full"
+              src="https://www.youtube.com/embed/VuYS5O-LMNk"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
