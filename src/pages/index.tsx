@@ -1,6 +1,7 @@
 import ReactFullpage from '@fullpage/react-fullpage'
 import type { NextPage } from 'next'
 import Image from 'next/image'
+import { NextSeo } from 'next-seo'
 import { useEffect, useState } from 'react'
 
 import {
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
 
   return (
     <>
+      <NextSeo description="世界で唯一の「ばんえい競馬」の歴史について紹介するページです。" />
       <Loading loading={loading} />
 
       <div className=" relative">
