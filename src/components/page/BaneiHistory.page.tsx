@@ -14,7 +14,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0)
   const [modalOpen, setModalOpen] = useState(false)
   const [modalOpenImg, setModalOpenImg] = useState(0)
-  const [autoPlayHandler, setAutoPlayHandler] = useState(true)
+  const [autoPlayHandler, setAutoPlayHandler] = useState(false)
 
   const stepsLength = 5
   const slidesProgress = useMotionValue(0)
@@ -81,6 +81,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
           <Swiper
             onSwiper={(swiper) => {
               setSwiperInstance(swiper)
+              swiper.autoplay.stop()
             }}
             effect={'fade'}
             fadeEffect={{
@@ -92,7 +93,11 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             }}
             onAutoplayTimeLeft={(swiper, _timeLeft, percentage) => {
               const { realIndex } = swiper
-              slidesProgress.set(realIndex - percentage + 1)
+              if (percentage > 0) {
+                slidesProgress.set(realIndex - percentage + 1)
+              } else {
+                slidesProgress.set(0)
+              }
             }}
             onSlideChange={(swiper) => {
               const { realIndex } = swiper
@@ -186,7 +191,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               type="button"
               onClick={() => {
                 setAutoPlayHandler(autoPlayHandler ? false : true)
-                autoPlayHandler ? swiperRef?.autoplay.pause() : swiperRef?.autoplay.resume()
+                autoPlayHandler ? swiperRef?.autoplay.stop() : swiperRef?.autoplay.start()
               }}
               className="absolute top-[48%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-6 text-sm text-white lg:top-[67.5%] lg:px-8 lg:text-xl"
             >
