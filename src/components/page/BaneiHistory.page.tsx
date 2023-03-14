@@ -82,6 +82,7 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
             onSwiper={(swiper) => {
               setSwiperInstance(swiper)
               swiper.autoplay.stop()
+              swiper.autoplay.pause()
             }}
             effect={'fade'}
             fadeEffect={{
@@ -191,7 +192,11 @@ const BaneiHistory = ({ activeSection }: { activeSection: number }) => {
               type="button"
               onClick={() => {
                 setAutoPlayHandler(autoPlayHandler ? false : true)
-                autoPlayHandler ? swiperRef?.autoplay.stop() : swiperRef?.autoplay.start()
+                autoPlayHandler
+                  ? swiperRef?.autoplay.pause()
+                  : swiperRef?.autoplay.paused
+                  ? swiperRef?.autoplay.resume()
+                  : swiperRef?.autoplay.start()
               }}
               className="absolute top-[48%] left-1/2 z-20 inline-block translate-x-[-50%] rounded bg-green py-2 px-6 text-sm text-white lg:top-[67.5%] lg:px-8 lg:text-xl"
             >
